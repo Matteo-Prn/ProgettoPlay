@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../css/view/register.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.RegisterController">
+   <center>
+      <VBox prefHeight="627.0" prefWidth="100.0" styleClass="card" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="header-card">
+               <children>
+                  <HBox prefHeight="11.0" prefWidth="68.0">
+                     <children>
+                        <Label fx:id="textRegister" styleClass="text-title" text="Registarti" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <MFXButton fx:id="backLoginPageBtn" styleClass="button-backPage">
+                           <graphic>
+                              <FontIcon styleClass="icon-arrow" />
+                           </graphic>
+                        </MFXButton>
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center-left" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </StackPane>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="content">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="alertAccount" prefHeight="200.0" prefWidth="100.0" styleClass="vbox-alert-account">
+                           <children>
+                              <Label fx:id="alertTitleText" styleClass="text-alert-accoun-title" text="Errot">
+                                 <graphic>
+                                    <FontIcon styleClass="icon-alert-account-title" />
+                                 </graphic>
+                              </Label>
+                              <Label fx:id="alertMessageText" styleClass="text-alert-account-messageKey" text="Messa" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="cardTitle" prefHeight="200.0" prefWidth="100.0" styleClass="vbox-cardtitle">
+                           <children>
+                              <Label fx:id="cardTitleText" styleClass="text-cardtitle" text="Inserisci i dati" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                     <children>
+                        <Label fx:id="floatingUsername" styleClass="text-floating" text="Label" />
+                        <TextField fx:id="fieldUsername" styleClass="field" />
+                        <Label fx:id="errorUsername" styleClass="text-error" text="Label">
+                           <graphic>
+                              <FontIcon styleClass="icon-error" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                     <children>
+                        <Label fx:id="floatingPassoword" styleClass="text-floating" text="Label" />
+                        <MFXPasswordField fx:id="fieldPassword" prefWidth="371.0" styleClass="mfx-password-field" />
+                        <Label fx:id="errorPassword" styleClass="text-error" text="Label">
+                           <graphic>
+                              <FontIcon styleClass="icon-error" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="hbox-component">
+                     <children>
+                        <Label fx:id="floatingFirstName" styleClass="text-floating" text="Label" />
+                        <TextField fx:id="fieldFirstName">
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="field" />
+                              <String fx:value="field-secondary-up" />
+                           </styleClass>
+                        </TextField>
+                        <Label fx:id="errorFirstName" styleClass="text-error" text="Label">
+                           <graphic>
+                              <FontIcon styleClass="icon-error" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="hbox-component">
+                     <children>
+                        <Label fx:id="floatingLastName" styleClass="text-floating" text="Label" />
+                        <TextField fx:id="fieldLastName">
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                           <styleClass>
+                              <String fx:value="field" />
+                              <String fx:value="field-secondary-up" />
+                           </styleClass>
+                        </TextField>
+                        <Label fx:id="errorLastName" styleClass="text-error" text="Label">
+                           <graphic>
+                              <FontIcon styleClass="icon-error" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-component">
+                     <children>
+                        <MFXButton fx:id="registerBtn" prefWidth="366.0" styleClass="button-login" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

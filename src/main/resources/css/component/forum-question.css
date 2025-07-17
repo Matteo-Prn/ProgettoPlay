@@ -1,0 +1,185 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+
+.container {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-background-color: -mfx-white;
+    -fx-padding: 24px 44px 24px 44px;
+    -fx-spacing: 8px;
+}
+
+.hbox-component {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 4px;
+}
+.hbox-component.center {
+    -fx-alignment: center;
+}
+.vbox-component {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 4px;
+}
+.vbox-component.center {
+    -fx-alignment: center;
+}
+
+.text {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+}
+.text.title-forum {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+}
+.text.floating {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+}
+.text.error {
+    -fx-text-fill: -mfx-red-error !important;
+    -fx-font-family: 'SF Pro Display Regular';
+    -fx-font-size: 11px;
+    -fx-graphic-text-gap: 4px !important;
+}
+#icon-error {
+    -fx-icon-code: "mdi2a-alert-circle";
+    -fx-icon-size: 11px;
+    -fx-icon-color: -mfx-red-error;
+}
+
+.button-preview {
+    -fx-min-width: -1;
+    -fx-min-height: 32px;
+    -fx-pref-width: -1;
+    -fx-pref-height: 32px;
+    -fx-max-width: -1;
+    -fx-max-height: 32px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-alignment: center;
+    -fx-content-display: left;
+    -fx-graphic-text-gap: 8px;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 13px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+}
+.button-preview .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+#icon-preview {
+    -fx-icon-size: 16px;
+    -fx-icon-color: -mfx-color-black-text-secondary;
+}
+.button-preview:hover {
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.button-preview:hover #icon-preview  {
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+.button-preview:pressed #icon-preview {
+    -fx-icon-color: -mfx-color-black-text-tertiary;
+}
+.button-preview:selected #icon-preview {
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+.check-button {
+    -mfx-main:-mfx-black;
+    -mfx-gray: -mfx-white;
+    -mfx-content-disposition: GRAPHIC_ONLY;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-padding: 2px;
+}
+.check-button .box,
+.check-button:selected .box {
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+
+}
+
+.check-button:selected .box .mark {
+    -mfx-color: -mfx-white;
+}
+
+.check-button .box .mark {
+    -mfx-description: "fas-check";
+    -mfx-color: -mfx-color-black-text-secondary;
+    -mfx-size: 15px;
+}
+
+.check-button .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.field {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-min-width: 240px;
+    -fx-pref-width: 240px;
+    -fx-max-width: 240px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-padding: 0px 8px;
+    -fx-alignment: center-left;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-prompt-text-fill: -mfx-color-black-text-secondary;
+    -fx-highlight-fill: -mfx-highlight-color;
+    -fx-highlight-text-fill: -mfx-color-black-text-primary;
+}
+.field:hover {
+    -fx-border-color: -mfx-gray-dark;
+}
+
+.invalid-field {
+    -fx-background-color: -mfx-white !important;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-red-error !important;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-text-fill: -mfx-red-error !important;
+}
+
+
+.check-button.correct-answer .box,
+.check-button.correct-answer:selected .box {
+    -fx-background-color: -mfx-green-light;
+    -fx-border-color: -mfx-green-light-contrast;
+}
+
+.check-button.incorrect-answer .box,
+.check-button.incorrect-answer:selected .box {
+    -fx-background-color: -mfx-red-error;
+    -fx-border-color: -mfx-red-dark;
+}
+
+.check-button.correct-answer .box .mark,
+.check-button.incorrect-answer .box .mark {
+    -mfx-color: -mfx-white;
+}

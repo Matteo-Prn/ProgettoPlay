@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root-borderpane" stylesheets="@../css/view/create-exercise.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.CreateExerciseController">
+   <center>
+      <StackPane fx:id="rootPane" prefHeight="720.0" prefWidth="984.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="header">
+                     <children>
+                        <Label fx:id="titlePage" text="Crea un esercizio">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="title-page" />
+                           </styleClass>
+                           <graphic>
+                              <FontIcon id="icon-page" fx:id="iconPage" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <StackPane styleClass="center-roo" VBox.vgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="containerForumInfoExercise" alignment="CENTER" styleClass="forum">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-component">
+                                 <children>
+                                    <Label fx:id="titleForum" text="Informazioni">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="title-forum" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="81.0" prefWidth="358.0" styleClass="vbox-component" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="floatingTitle" text="Titolo">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="floating" />
+                                             </styleClass>
+                                          </Label>
+                                          <TextField fx:id="fieldTitle" styleClass="field" />
+                                          <Label fx:id="errorTitle" text="Label">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="error" />
+                                             </styleClass>
+                                             <graphic>
+                                                <FontIcon id="icon-error" />
+                                             </graphic>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="floatingDifficulty" text="Difficoltà">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="floating" />
+                                             </styleClass>
+                                          </Label>
+                                          <MFXComboBox fx:id="fieldDifficulty" prefHeight="42.0" prefWidth="320.0" styleClass="mfx-combo-box-forum" />
+                                          <Label fx:id="errorDifficulty" text="Label">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="error" />
+                                             </styleClass>
+                                             <graphic>
+                                                <FontIcon id="icon-error" />
+                                             </graphic>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="hbox-component" />
+                                    <String fx:value="spacing" />
+                                 </styleClass>
+                              </HBox>
+                              <VBox prefHeight="81.0" prefWidth="358.0" styleClass="vbox-component">
+                                 <children>
+                                    <Label fx:id="floatingDescription" text="Descrizione">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="floating" />
+                                       </styleClass>
+                                    </Label>
+                                    <TextArea fx:id="fieldDescription" prefHeight="200.0" prefWidth="200.0">
+                                       <styleClass>
+                                          <String fx:value="descrption" />
+                                          <String fx:value="no-scroll-area" />
+                                       </styleClass>
+                                    </TextArea>
+                                    <Label fx:id="errorDescription" text="Label">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="error" />
+                                       </styleClass>
+                                       <graphic>
+                                          <FontIcon id="icon-error" />
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                                 <children>
+                                    <Label fx:id="floatingTopic" text="Argomento">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="floating" />
+                                       </styleClass>
+                                    </Label>
+                                    <MFXComboBox fx:id="fieldTopic" prefHeight="42.0" prefWidth="320.0" styleClass="mfx-combo-box-forum" />
+                                    <Label fx:id="errorTopic" text="Label">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="error" />
+                                       </styleClass>
+                                       <graphic>
+                                          <FontIcon id="icon-error" />
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-component">
+                                       <children>
+                                          <Label fx:id="floatingCategory" text="Categoria">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="floating" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <MFXComboBox fx:id="fieldCategory" prefHeight="42.0" prefWidth="320.0" styleClass="mfx-combo-box-forum" />
+                                    <Label fx:id="errorCategory" text="Label">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="error" />
+                                       </styleClass>
+                                       <graphic>
+                                          <FontIcon id="icon-error" />
+                                       </graphic>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="containerForumQuestion" alignment="CENTER" styleClass="forum">
+                           <children>
+                              <fx:include fx:id="forumQuestion" source="ForumQuestion.fxml" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="containerRecapExercise" alignment="CENTER" styleClass="forum">
+                           <children>
+                              <fx:include fx:id="recapExercise" source="RecapExercise.fxml" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="bottom">
+                     <children>
+                        <MFXButton fx:id="backBtn" styleClass="button-base" text="Indietro">
+                           <graphic>
+                              <FontIcon id="icon-arrow" />
+                           </graphic>
+                        </MFXButton>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <MFXButton fx:id="nextBtn" text="Avanti">
+                           <styleClass>
+                              <String fx:value="button-base" />
+                              <String fx:value="next-create" />
+                           </styleClass>
+                        </MFXButton>
+                        <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <MFXButton fx:id="createBtn" text="Crea">
+                           <styleClass>
+                              <String fx:value="button-base" />
+                              <String fx:value="next-create" />
+                           </styleClass>
+                        </MFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+   <left>
+      <fx:include fx:id="sidebarAdmin" source="SidebarAdmin.fxml" />
+   </left>
+</BorderPane>

@@ -1,0 +1,553 @@
+{
+  "exercises": [
+    {
+      "titleKey": "exercise.fund.output.easy.title",
+      "descriptionKey": "exercise.fund.output.easy.description",
+      "category": "OUTPUT",
+      "difficulty": "EASY",
+      "topic": "FUNDAMENTALS",
+      "questions": [
+        {
+          "questionText": "char x = 'A', y = 65;\nSystem.out.println(x + \"-\" + y);",
+          "answers": [
+            { "text": "A - A", "isCorrect": true },
+            { "text": "x - y", "isCorrect": false },
+            { "text": "X - Y", "isCorrect": false },
+            { "text": "A - 65", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "!(3<4)",
+          "answers": [
+            { "text": "3", "isCorrect": false },
+            { "text": "true", "isCorrect": false },
+            { "text": "false", "isCorrect": true },
+            { "text": "4", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "!(\"hello\"== \"Hello\")",
+          "answers": [
+            { "text": "false", "isCorrect": false },
+            { "text": "true", "isCorrect": true },
+            { "text": "hello", "isCorrect": false },
+            { "text": "Hello", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int i = 3;\nint j = 4;\n\ni++;\nSystem.out.println(i);",
+          "answers": [
+            { "text": "3", "isCorrect": false },
+            { "text": "5", "isCorrect": false },
+            { "text": "4", "isCorrect": true },
+            { "text": "i", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int i = 3;\nint j = 4;\n\nj--;\nSystem.out.println(j);",
+          "answers": [
+            { "text": "j", "isCorrect": false },
+            { "text": "5", "isCorrect": false },
+            { "text": "true", "isCorrect": false },
+            { "text": "3", "isCorrect": true }
+          ]
+        }
+      ]
+    },
+    {
+      "titleKey": "exercise.fund.output.intermediate.title",
+      "descriptionKey": "exercise.fund.output.intermediate.description",
+      "category": "OUTPUT",
+      "difficulty": "INTERMEDIATE",
+      "topic": "FUNDAMENTALS",
+      "questions": [
+        {
+          "questionText": "int x = 5;\nif (x > 3)\nSystem.out.println(\"A\");\nelse\nSystem.out.println(\"B\");",
+          "answers": [
+            { "text": "A", "isCorrect": true },
+            { "text": "B", "isCorrect": false },
+            { "text": "Errore di compilazione", "isCorrect": false },
+            { "text": "Nessuna stampa", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int x = 2;\nswitch (x) {\ncase 1:\nSystem.out.println(\"Uno\");\ncase 2:\nSystem.out.println(\"Due\");\ncase 3:\nSystem.out.println(\"Tre\");\nbreak;\ndefault:\nSystem.out.println(\"Altro\");\n}",
+          "answers": [
+            { "text": "Due", "isCorrect": false },
+            { "text": "Due Tre Altro", "isCorrect": false },
+            { "text": "Due Tre", "isCorrect": true },
+            { "text": "Tre", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int y = 4;\nif (y % 2 == 0)\nSystem.out.println(\"Pari\");\nelse if (y % 2 != 0)\nSystem.out.println(\"Dispari\");\nSystem.out.println(\"Fine\");)",
+          "answers": [
+            { "text": "Pari", "isCorrect": false },
+            { "text": "Pari Fine", "isCorrect": true },
+            { "text": "Dispari Fine", "isCorrect": false },
+            { "text": "Fine", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int giorno = 5;\nString risultato = \"\";\n\nswitch (giorno) {\ncase 1 -> risultato = \"Lunedì\";\ncase 2 -> risultato = \"Martedì\";\ncase 3, 4, 5 -> risultato = \"Metà settimana\";\ndefault -> risultato = \"Altro\";\n}\n\nSystem.out.println(risultato);",
+          "answers": [
+            { "text": "Mercoledì", "isCorrect": false },
+            { "text": "Metà settimana", "isCorrect": true },
+            { "text": "Altro", "isCorrect": false },
+            { "text": "Errore di compilazione", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int voto = 28;\n\nif (voto >= 30)\nSystem.out.println(\"Eccellente\");\nelse if (voto >= 18);\nSystem.out.println(\"Sufficiente\");\nelse\nSystem.out.println(\"Insufficiente\");",
+          "answers": [
+            { "text": "Eccelllente", "isCorrect": false },
+            { "text": "Insufficinete", "isCorrect": false },
+            { "text": "28", "isCorrect": false },
+            { "text": "Sufficiente", "isCorrect": true }
+          ]
+        }
+      ]
+    },
+    {
+      "titleKey": "exercise.fund.output.hard.title",
+      "descriptionKey": "exercise.fund.output.hard.description",
+      "category": "OUTPUT",
+      "difficulty": "HARD",
+      "topic": "FUNDAMENTALS",
+      "questions": [
+        {
+          "questionText": "for (int i = 0; i < 3; i++)\nfor (int j = 0; j < 2; j++)\nSystem.out.print(i + \",\" + j + \" \");",
+          "answers": [
+            {
+              "text": "0,0 1,0, 2,0",
+              "isCorrect": false
+            },
+            {
+              "text": "0,0 0,1 1,0 1,1 2,0 2,1",
+              "isCorrect": true
+            },
+            {
+              "text": "0,0 1,1 2,2",
+              "isCorrect": false
+            },
+            {
+              "text": "Errore di compilazione",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "int i = 0;\nwhile (i < 3)\nSystem.out.println(i++);",
+          "answers": [
+            {
+              "text": "1 2 3",
+              "isCorrect": false
+            },
+            {
+              "text": "0 1 2",
+              "isCorrect": true
+            },
+            {
+              "text": "0 1 2 3",
+              "isCorrect": false
+            },
+            {
+              "text": "Errore di compilazione",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "int x = 0;\ndo {\nx++;\nif (x == 2)\ncontinue;\nSystem.out.print(x + \" \");\n} while (x < 4);",
+          "answers": [
+            {
+              "text": "1 2 3 4",
+              "isCorrect": false
+            },
+            {
+              "text": "1 2 3",
+              "isCorrect": false
+            },
+            {
+              "text": "0 1 2 3 4",
+              "isCorrect": false
+            },
+            {
+              "text": "1 3 4",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "for (int i = 0; i < 5; i++) {\nif (i == 3)\nbreak;\nSystem.out.print(i + \" \");\n}",
+          "answers": [
+            {
+              "text": "0 1 2",
+              "isCorrect": true
+            },
+            {
+              "text": "0 1 2 3",
+              "isCorrect": false
+            },
+            {
+              "text": "1 2 3",
+              "isCorrect": false
+            },
+            {
+              "text": "0 1 2 3 4",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "int count = 0;\nfor (int i = 1; i <= 5; i++) {\nif (i % 2 == 0)\ncontinue;\ncount++;\n}\nSystem.out.println(count);",
+          "answers": [
+            {
+              "text": "0",
+              "isCorrect": false
+            },
+            {
+              "text": "2",
+              "isCorrect": false
+            },
+            {
+              "text": "5",
+              "isCorrect": false
+            },
+            {
+              "text": "3",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "titleKey": "exercise.fund.find_error.easy.title",
+      "descriptionKey": "exercise.fund.find_error.easy.description",
+      "category": "FIND_ERROR",
+      "difficulty": "EASY",
+      "topic": "FUNDAMENTALS",
+      "questions": [
+        {
+          "questionText": "int numero = 10;\ndouble numero = 5.5;",
+          "answers": [
+            { "text": "Nessun errore", "isCorrect": false },
+            { "text": "Manca final", "isCorrect": false },
+            { "text": "Variabile già dichiarata ", "isCorrect": true },
+            { "text": "Numero è negativo", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "boolean risultato = (5 > 3) && (4 = 4);",
+          "answers": [
+            { "text": "Nessun errore", "isCorrect": false },
+            { "text": "False", "isCorrect": false },
+            { "text": "= usato al posto di ==", "isCorrect": true },
+            { "text": "True", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int x = 5;\n\nif (x > 0);\nSystem.out.println(\"Positivo\");",
+          "answers": [
+            { "text": "Output: Positivo", "isCorrect": false },
+            { "text": "x non è inizializzato", "isCorrect": false },
+            { "text": " if non chiuso", "isCorrect": false },
+            { "text": "Il ; dopo if ", "isCorrect": true }
+          ]
+        },
+        {
+          "questionText":"int[] numeri;\nnumeri[0] = 5;",
+          "answers": [
+            { "text": "ArrayIndexOutOfBoundsException", "isCorrect": false },
+            { "text": "Numeri non inizializzato", "isCorrect": true },
+            { "text": "Numeri ha lunghezza zero", "isCorrect": false },
+            { "text": "Nessun errore", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int[] numeri = {1, 2, 3};\nSystem.out.println(numeri[3]);",
+          "answers": [
+            { "text": "Output: 3", "isCorrect": false },
+            { "text": "Errore di sintassi", "isCorrect": false },
+            { "text": "ArrayIndexOutOfBoundsException", "isCorrect": true },
+            { "text": "Output: 1 2 3", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "titleKey": "exercise.fund.find_error.intermediate.title",
+      "descriptionKey": "exercise.fund.find_error.intermediate.description",
+      "category": "FIND_ERROR",
+      "difficulty": "INTERMEDIATE",
+      "topic": "METHODS",
+      "questions": [
+        {
+          "questionText": "public void stampa() {\nreturn \"Hello\";\n}",
+          "answers": [
+            { "text": "Output: Hello", "isCorrect": false },
+            { "text": "Nessun errore", "isCorrect": false },
+            { "text": "Void non può restituire un valore", "isCorrect": true },
+            { "text": "Manca la parentesi graffa finale", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "public static int somma(int a, int b) {\nreturn a + b;\n}\n\nint risultato = somma(2);",
+          "answers": [
+            { "text": "Nessun errore", "isCorrect": false },
+            { "text": "Numero errato di argomenti", "isCorrect": true },
+            { "text": "Output: 2", "isCorrect": false },
+            { "text": "Somma è un double", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "public int calcola() {\nint x = 10;\n}",
+          "answers": [
+            { "text": "Output: 10", "isCorrect": false },
+            { "text": "x non è inizializzato", "isCorrect": false },
+            { "text": "Non restituisce alcun valore", "isCorrect": true },
+            { "text": "Nessun errore", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText":"static int doppio(int x) {\nreturn x * 2;\n}\n\npublic static void main(String[] args) {\nint risultato = doppio(\"3\");\nSystem.out.println(risultato);\n}",
+          "answers": [
+            { "text": "Output: 6", "isCorrect": false },
+            { "text": "Nessun errore", "isCorrect": false },
+            { "text": "Tipo di argomento non compatibile", "isCorrect": true },
+            { "text": "Non ci sono errori", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "int somma(int a, int b) {\nreturn a + b;\n}\n\npublic static void main(String[] args) {\n int x = somma(1, 2);\nSystem.out.println(x);\n}",
+          "answers": [
+            { "text": "Nessun Errore", "isCorrect": false },
+            { "text": "Somma non può essere chiamato", "isCorrect": true },
+            { "text": "Somma ha troppi parametri", "isCorrect": false },
+            { "text": "Somma ha troppe parentesi", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+
+    {
+      "titleKey": "exercise.fund.find_error.hard.title",
+      "descriptionKey": "exercise.fund.find_error.hard.description",
+      "category": "FIND_ERROR",
+      "difficulty": "HARD",
+      "topic": "IO",
+      "questions": [
+        {
+          "questionText": "File f = new File(\"test.txt\");\nFileWriter fw = new FileWriter(f);\nfw.write(\"ciao\");",
+          "answers": [
+            { "text": "File va chiuso", "isCorrect": false },
+            { "text": "write è privato", "isCorrect": false },
+            { "text": "Manca close() ", "isCorrect": true },
+            { "text": "File è astratto", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "FileReader fr = new FileReader(\"x.txt\");\nint c;\nwhile ((c = fr.read()) != -1)\nSystem.out.print(c);",
+          "answers": [
+            { "text": "int vietato", "isCorrect": false },
+            { "text": "read() non esiste", "isCorrect": false },
+            { "text": "IOException non gestita", "isCorrect": true },
+            { "text": "fr è null", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "try (Scanner sc = new Scanner(System.in)) {\nsc.close();\nsc.next();\n}",
+          "answers": [
+            { "text": " next() statico", "isCorrect": false },
+            { "text": "close() non serve", "isCorrect": false },
+            { "text": "Scanner non è AutoCloseable", "isCorrect": false },
+            { "text": "Uso dopo close()", "isCorrect": true }
+          ]
+        },
+        {
+          "questionText":"var f = new File(\"out.txt\");\nFiles.createFile(f.toPath());",
+          "answers": [
+            { "text": "var non ammesso", "isCorrect": false },
+            { "text": "toPath() sbagliato", "isCorrect": false },
+            { "text": "File esiste già ", "isCorrect": true },
+            { "text": "createFile è privato", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "PrintWriter pw = new PrintWriter(\"log.txt\");\npw.println(\"Log\");\npw.flush();",
+          "answers": [
+            { "text": "println errato", "isCorrect": false },
+            { "text": "Manca close()", "isCorrect": true },
+            { "text":  "flush() è privato", "isCorrect": false },
+            { "text": "File non valido", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "titleKey": "exercise.fund.solve_code.easy.title",
+      "descriptionKey": "exercise.fund.solve_code.easy.description",
+      "category": "SOLVE_CODE",
+      "difficulty": "EASY",
+      "topic": "FUNDAMENTALS",
+      "questions": [
+        {
+          "questionText": "Quale operatore si usa per assegnare\nil valore 5 alla variabile x\nin questa istruzione?\n\nint x __ 5;",
+          "answers": [
+            { "text": "==", "isCorrect": false },
+            { "text": "-->", "isCorrect": false },
+            { "text": ": ", "isCorrect": true },
+            { "text": "=", "isCorrect": true }
+          ]
+        },
+        {
+          "questionText": "Quale tipo di dato va inserito\nper dichiarare correttamente la variabile 's'\nin questa istruzione?\n\n__ s = \"Ciao\";",
+          "answers": [
+            { "text": "string", "isCorrect": false },
+            { "text": "Text", "isCorrect": false },
+            { "text": "String", "isCorrect": true },
+            { "text": "Char[]", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Cosa va inserito\n per incrementare la variabile 'i'\nin questo ciclo for?\n\nfor (int i = 0; i < 5; __) { ... }",
+          "answers": [
+            { "text": "i = i + 1", "isCorrect": false },
+            { "text": "i+1", "isCorrect": false },
+            { "text": "i+", "isCorrect": false },
+            { "text": "i++", "isCorrect": true }
+          ]
+        },
+        {
+          "questionText":"Quale parola chiave\n va inserita per definire il blocco di codice\n da eseguire se la condizione (x > 10) è falsa?\n\nif (x > 10){\n ... \n} __ {\n... \n}",
+          "answers": [
+            { "text": "for", "isCorrect": false },
+            { "text": "else", "isCorrect": true },
+            { "text": "else if ", "isCorrect": false },
+            { "text": "switch", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Quale metodo di 'System.out'\nva usato per stampare la stringa \"Messaggio\"\ne andare a capo?\n\nSystem.out.__(\"Messaggio\");",
+          "answers": [
+            { "text": "println", "isCorrect": true },
+            { "text": "print", "isCorrect": false },
+            { "text":  "log", "isCorrect": false },
+            { "text": "write", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "titleKey": "exercise.fund.solve_code.intermediate.title",
+      "descriptionKey": "exercise.fund.solve_code.intermediate.description",
+      "category": "SOLVE_CODE",
+      "difficulty": "INTERMEDIATE",
+      "topic": "FUNDAMENTALS",
+      "questions": [
+        {
+          "questionText": "Qual'è la condizione per stampare “OK”?\n\nint x = 10;\nif (x ___ 5) {\nSystem.out.println(\"OK\");\n}",
+          "answers": [
+            { "text": "=>", "isCorrect": false },
+            { "text": ">=", "isCorrect": true },
+            { "text": "=<", "isCorrect": false },
+            { "text": "><", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Qual'è il metodo corretto per ottenere la lunghezza di una stringa?\n\nString s = \"ciao\";\nSystem.out.println(s.____);",
+          "answers": [
+            { "text": "print()", "isCorrect": false },
+            { "text": "toChar()", "isCorrect": false },
+            { "text": "length()", "isCorrect": true },
+            { "text": "size()", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": " Crea un array di interi vuoto:\n\nint[] arr = new int[____];",
+          "answers": [
+            { "text": "int", "isCorrect": false },
+            { "text": "null", "isCorrect": false },
+            { "text": "double", "isCorrect": false },
+            { "text": "0", "isCorrect": true }
+          ]
+        },
+        {
+          "questionText":"Qual'è’istruzione per decrementare i a ogni ciclo.\n\nfor (int i = 0; i < 10; __){\nSystem.out.println(i);\n}",
+          "answers": [
+            { "text": "i--", "isCorrect": true },
+            { "text": "i-", "isCorrect": false },
+            { "text": "i++ ", "isCorrect": false },
+            { "text": "i+", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "boolean b = __;\nSystem.out.println(b);",
+          "answers": [
+            { "text": "false o true", "isCorrect": true },
+            { "text": "0", "isCorrect": false },
+            { "text":  "a", "isCorrect": false },
+            { "text": "\"true\"", "isCorrect": false }
+          ]
+        }
+      ]
+    },
+    {
+      "titleKey": "exercise.fund.solve_code.hard.title",
+      "descriptionKey": "exercise.fund.solve_code.hard.description",
+      "category": "SOLVE_CODE",
+      "difficulty": "HARD",
+      "topic": "FUNDAMENTALS",
+      "questions": [
+        {
+          "questionText": "Qual'è il metodo per arrotondare 4.7 verso il basso.\n\nint res = Math.____(4.7);",
+          "answers": [
+            { "text": "down", "isCorrect": false },
+            { "text": "floor", "isCorrect": true },
+            { "text": "roundf", "isCorrect": false },
+            { "text": "min", "isCorrect": true }
+          ]
+        },
+        {
+          "questionText": "Scegli l’operatore corretto per evitare NullPointerException.\n\nString s = null;\nif (s != null && s.length() > 0) {\nSystem.out.println(\"OK\");\n}",
+          "answers": [
+            { "text": "||", "isCorrect": false },
+            { "text": "&&", "isCorrect": true },
+            { "text": "&", "isCorrect": false },
+            { "text": "?:", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Completa l’operatore ternario per restituire \"ok\" o \"no\".\n\nint x = 5;\nString out = (x > 3) ? \"ok\" : ____;",
+          "answers": [
+            { "text": "else", "isCorrect": false },
+            { "text": "false", "isCorrect": false },
+            { "text": "break", "isCorrect": false },
+            { "text": "no", "isCorrect": true }
+          ]
+        },
+        {
+          "questionText":"Inserisci un valore corretto per la costante PI.\n\n___ ___ PI = ____;",
+          "answers": [
+            { "text": "final double 3.14", "isCorrect": true },
+            { "text": "static int 3.14", "isCorrect": false },
+            { "text": "final String 3.14 ", "isCorrect": false },
+            { "text": "Integer 1.14", "isCorrect": false }
+          ]
+        },
+        {
+          "questionText": "Scegli il metodo corretto per ottenere il primo carattere di una stringa.\n\nvar x = \"hello\";\nSystem.out.println(x.____(0));",
+          "answers": [
+            { "text": "get", "isCorrect": false },
+            { "text": "at", "isCorrect": false },
+            { "text":  "charAt", "isCorrect": true },
+            { "text": "char", "isCorrect": false }
+          ]
+        }
+      ]
+    }
+
+  ]
+}
+

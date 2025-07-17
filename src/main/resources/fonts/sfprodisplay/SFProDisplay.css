@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "SF Pro Display Regular";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Regular.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Bold";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Bold.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-RegularItalic.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Bold Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-BoldItalic.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Light";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Light.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Light Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-LightItalic.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Medium";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Medium Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-MediumItalic.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display SemiBold";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Semibold.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display SemiBold Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-SemiboldItalic.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Thin";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Thin.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Thin Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-ThinItalic.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Heavy";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Heavy.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Heavy Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-HeavyItalic.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Black";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-Black.otf");
+}
+
+@font-face {
+    font-family: "SF Pro Display Black Italic";
+    src: url("/fonts/sfprodisplay/SF-Pro-Display-BlackItalic.otf");
+}

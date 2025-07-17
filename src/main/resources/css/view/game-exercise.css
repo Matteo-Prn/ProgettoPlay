@@ -1,0 +1,448 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.root {
+    -fx-min-width: 1280px;
+    -fx-min-height: 720px;
+    -fx-pref-width: 1280px;
+    -fx-pref-height: 720px;
+    -fx-background-color: -mfx-white;
+}
+
+.header {
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-padding: 44px 44px 0px 44px;
+}
+
+.bottom {
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: 70px;
+    -fx-padding: 0px 44px 44px 44px;
+    -fx-alignment: center;
+}
+.button-base {
+    -fx-min-width: 120px;
+    -fx-pref-width: 120px;
+    -fx-max-width: 120px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-alignment: center;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+}
+#icon-arrow {
+    -fx-icon-code: "mdi2a-arrow-left";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-black-text-secondary;
+}
+.button-base:hover {
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.button-base:hover #icon-arrow {
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+.button-base .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.button-base.next-confirm {
+    -fx-background-color: -mfx-black;
+    -fx-text-fill: -mfx-color-white-text-secondary;
+}
+.button-base:hover.next-confirm {
+    -fx-text-fill: -mfx-color-white-text-primary;
+}
+
+.button-base.graphic-only {
+    -fx-min-width: 40px;
+    -fx-pref-width: 40px;
+    -fx-max-width: 40px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-background-radius: 50%;
+    -fx-content-display: graphic-only;
+}
+#icon-close {
+    -fx-icon-code: "mdi2c-close";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-black-text-secondary;
+}
+.graphic-only:hover #icon-close {
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+.component {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 4px;
+}
+
+.center {
+    -fx-alignment: center;
+}
+.center-left {
+    -fx-alignment: center-left;
+}
+.spacing-4 {
+    -fx-spacing: 4px;
+}
+.spacing-8 {
+    -fx-spacing: 8px;
+}
+.spacing-16 {
+    -fx-spacing: 16px;
+}
+.spacing-24 {
+    -fx-spacing: 24px;
+}
+
+.text{
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+}
+.text.counterExericse {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+}
+.text.number {
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 17px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+}
+.text.float {
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+#progress {
+    -fx-min-height: 8px;
+    -fx-pref-height: 8px;
+    -fx-max-height: 8px;
+    -fx-background-radius: 4px;
+}
+#progress .track {
+    -fx-fill: -mfx-under-window-background;
+}
+
+#progress .bar1,
+#progress .bar2 {
+    -fx-fill: -mfx-color-blue-text-primary;
+}
+.center-root {
+    -fx-padding: 16px;
+    -fx-alignment: top-center;
+}
+
+.card-exercise {
+    -fx-min-width: 680px;
+    -fx-pref-width: 680px;
+    -fx-max-width: 680px;
+    -fx-min-height: 480px;
+    -fx-pref-height: 480px;
+    -fx-max-height: 480px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 24px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.check-button {
+    -mfx-main:-mfx-black;
+    -mfx-gray: -mfx-white;
+    -mfx-content-disposition: GRAPHIC_ONLY;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-padding: 2px;
+}
+.check-button .box,
+.check-button:selected .box {
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+
+}
+
+.check-button:selected .box .mark {
+    -mfx-color: -mfx-white;
+}
+
+.check-button .box .mark {
+    -mfx-description: "fas-check";
+    -mfx-color: -mfx-color-black-text-secondary;
+    -mfx-size: 15px;
+}
+
+.check-button .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.field {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-min-width: 240px;
+    -fx-pref-width: 240px;
+    -fx-max-width: 240px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-padding: 0px 8px;
+    -fx-alignment: center-left;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-prompt-text-fill: -mfx-color-black-text-secondary;
+    -fx-highlight-fill: -mfx-highlight-color;
+    -fx-highlight-text-fill: -mfx-color-black-text-primary;
+}
+.field:hover {
+    -fx-border-color: -mfx-gray-dark;
+}
+
+.check-button.user-selected {
+    -fx-border-color: -mfx-white;
+}
+
+.check-button.correct-answer .box,
+.check-button.correct-answer:selected .box {
+    -fx-background-color: -mfx-green-light;
+    -fx-border-color: -mfx-green-light-contrast;
+}
+
+.check-button.incorrect-answer .box,
+.check-button.incorrect-answer:selected .box {
+    -fx-background-color: -mfx-red-error;
+    -fx-border-color: -mfx-red-dark;
+}
+
+.check-button.correct-answer .box .mark,
+.check-button.incorrect-answer .box .mark {
+    -mfx-color: -mfx-white;
+}
+
+.dialogon-close {
+    -fx-min-width: 350px;
+    -fx-pref-width: 350px;
+    -fx-max-width: 350px;
+    -fx-min-height: 150px;
+    -fx-pref-height: 150px;
+    -fx-max-height: 150px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.text.title-dialogon-close {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 17px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.button-dialogon {
+    -fx-min-width: 100px;
+    -fx-pref-width: 100px;
+    -fx-max-width: 100px;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.button-dialogon:hover,
+.button-dialogon:pressed,
+.button-dialogon:focused,
+.button-dialogon:selected {
+    -fx-background-color: -mfx-black;
+    -fx-text-fill: -mfx-color-white-text-primary;
+}
+.button-dialogon .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+#icon-close-dialog {
+    -fx-icon-code: "mdi2c-close";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-black-text-secondary;
+}
+.button-dialog-close {
+    -fx-min-width: 22px;
+    -fx-pref-width: 22px;
+    -fx-max-width: 22px;
+    -fx-min-height: 22px;
+    -fx-pref-height: 22px;
+    -fx-max-height: 22px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-content-display: graphic-only;
+    -fx-alignment: center;
+}
+.button-dialog-close:hover {
+    -fx-background-color: -mfx-red-alert-background;
+}
+.button-dialog-close:hover #icon-close-dialog {
+    -fx-icon-color: -mfx-red-error;
+}
+.button-dialog-close .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.text.dialog-message {
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 13px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.dialog-result {
+    -fx-min-width: 540px;
+    -fx-pref-width: 540px;
+    -fx-max-width: 540px;
+    -fx-min-height: 360px;
+    -fx-pref-height: 360px;
+    -fx-max-height: 360px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 24px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.text.dialog-result-title {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.rectangle-score {
+    -fx-min-width: 100px;
+    -fx-pref-width: 100px;
+    -fx-max-width: 100px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-padding: 8px;
+    -fx-spacing: 4px;
+    -fx-alignment: center;
+}
+
+.text.dialog-result-score {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 17px;
+}
+
+.button-viewResult {
+    -fx-min-width: 100px;
+    -fx-pref-width: 100px;
+    -fx-max-width: 100px;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+
+    -fx-background-color: transparent;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-alignment: center;
+}
+.button-viewResult:hover{
+    -fx-text-fill: -mfx-color-blue-text-primary;
+    -fx-border-color: -mfx-color-blue-text-primary;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 0px;
+    -fx-alignment: center;
+}
+.button-viewResult:disabled {
+    -fx-text-fill: -mfx-color-black-text-secondary;
+}
+.button-viewResult .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.text.separator {
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 13px;
+}
+
+.button-dialogon-result {
+    -fx-min-width: 240px;
+    -fx-pref-width: 240px;
+    -fx-max-width: 240px;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.button-dialogon-result:hover{
+    -fx-background-color: -mfx-black;
+    -fx-text-fill: -mfx-color-white-text-primary;
+}
+.button-dialogon-result .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.conatiner-result-data {
+    -fx-min-width: 160px;
+    -fx-pref-width: 160px;
+    -fx-max-width: 160px;
+    -fx-min-height: 90px;
+    -fx-pref-height: 90px;
+    -fx-max-height: 90px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 8px;
+    -fx-alignment: top-left;
+}
+
+.text.subtile-result {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+}
+
+.text.result {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+}
+
+.text.result-sub {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+}

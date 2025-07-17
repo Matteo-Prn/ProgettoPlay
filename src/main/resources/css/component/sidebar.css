@@ -1,0 +1,447 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.sidebar {
+    -fx-pref-width: 240px;
+    -fx-min-width: 240px;
+    -fx-max-width: 240px;
+    -fx-pref-height: 720px;
+    -fx-min-height: 720px;
+    -fx-max-height: Infinity;
+    -fx-padding: 24px;
+    -fx-spacing: 64px;
+    -fx-alignment: top-center;
+    -fx-background-color: -mfx-white;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.VBOX-nav-button {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 32px;
+    -fx-background-color: transparent;
+}
+.VBOX-nav-button-variant {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 8px;
+    -fx-background-color: transparent;
+}
+
+.VBOX-nav-BOTTOM {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 32px;
+    -fx-background-color: transparent;
+    -fx-alignment: bottom-left;
+}
+.HBOX-nav-button {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-alignment: center-left;
+    -fx-background-color: transparent;
+}
+
+.sidebar .HBOX-nav-button > .icon-logo {
+    -fx-fit-height: 32px;
+    -fx-fit-width: 32px;
+    -fx-padding: 0px;
+    -fx-alignment: center;
+    -fx-image: url('../../image/logo/logo-fill.png');
+}
+
+.sidebar-button {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-alignment: center-left;
+    -fx-padding: 4px 8px;
+    -fx-content-display: left;
+    -fx-background-color: transparent;
+    -fx-background-radius: 9px;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-graphic-text-gap: 8px;
+}
+
+.icon-button {
+    -fx-icon-size: 16px;
+    -fx-icon-color: -mfx-color-black-text-secondary;
+}
+.sidebar-button:hover {
+    -fx-background-color: -mfx-under-window-background;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.sidebar-button:hover .icon-button {
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+
+.label-sidabar-section {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-padding: 0 8px;
+}
+
+.sidebar-button-variant {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-padding: 4px 8px;
+    -fx-content-display: left;
+    -fx-background-color: transparent;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1.5px;
+    -fx-border-style: solid;
+    -fx-border-radius: 9px;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-alignment: center;
+    -fx-graphic-text-gap: 8px;
+}
+.sidebar-button-variant:hover {
+    -fx-border-color: -mfx-black !important;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.sidebar-button-variant:hover .icon-button {
+    -fx-icon-color: -mfx-color-black-text-primary !important;
+}
+
+
+.HBOX-text-button-menu {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-alignment: center-left;
+    -fx-background-color: transparent;
+    -fx-spacing: 8px;
+}
+.VBOX-text-button-menu {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-alignment: center-left;
+    -fx-background-color: transparent;
+    -fx-spacing: 2px;
+}
+
+.label-username-menu {
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 13px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.label-role-menu {
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 11px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.label-role-menu.section {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 11px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-background-color: transparent;
+    -fx-padding: 0px 8px;
+}
+
+.label-icon-button-menu {
+    -fx-background-color: -mfx-red-light-contrast;
+    -fx-background-radius: 5px;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-white;
+    -fx-padding: 3px 8px;
+}
+
+.sidebar-botton-menu {
+    -fx-popup-side: TOP !important;
+    -fx-min-height: 52px;
+    -fx-pref-height: 52px;
+    -fx-max-height: 52px;
+    -fx-alignment: center-left;
+    -fx-padding: 4px 8px;
+    -fx-content-display: left;
+    -fx-graphic-text-gap: 16px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 9px;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-size: 15px;
+}
+
+.sidebar-botton-menu .arrow-button .arrow {
+    -fx-opacity: 0;
+    -fx-rotate: 180deg;
+}
+.sidebar-botton-menu:showing .arrow-button .arrow,
+.sidebar-botton-menu:hover .arrow-button .arrow {
+    -fx-opacity: 1;
+    -fx-background-color: -mfx-color-black-text-primary;
+}
+
+.sidebar-botton-menu:hover {
+    -fx-background-color: -mfx-under-window-background;
+}
+.sidebar-botton-menu:showing{
+    -fx-background-color: -mfx-under-window-background;
+}
+
+.sidebar-botton-menu > .context-menu .context-menu {
+    -fx-min-width: 191px;
+    -fx-pref-width: 191px;
+    -fx-max-width: 191px;
+    -fx-translate-y: -4px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-padding: 8px;
+    -fx-effect: null;
+}
+
+.custom-menu-item {
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+    -fx-alignment: top-left;
+}
+
+.VBOX-nav-botton-menu {
+    -fx-min-width: 175px;
+    -fx-pref-width: 175px;
+    -fx-max-width: 175px;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 16px;
+    -fx-background-color: transparent;
+}
+.VBOX-nav-item-menu {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 8px;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+
+.button-menu-item {
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-min-width: 175px;
+    -fx-pref-width: 175px;
+    -fx-max-width: 175px;
+    -fx-padding: 4px 8px;
+    -fx-content-display: left;
+    -fx-background-color: transparent;
+    -fx-background-radius: 7px;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 13px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-alignment: center-left;
+    -fx-graphic-text-gap: 8px;
+}
+
+.button-menu-item:hover {
+    -fx-background-color: -mfx-gray-light;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.button-menu-item:hover .icon-button {
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+.HBOX-nav-separator {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+.HBOX-nav-separator.left {
+    -fx-alignment: center-left;
+}
+
+
+#separator-menu-item {
+    -fx-min-height: 1px;
+    -fx-pref-height: 1px;
+    -fx-max-height: 1px;
+    -fx-min-width: 167px;
+    -fx-pref-width: 167px;
+    -fx-max-width: 167px;
+    -fx-background-color: -mfx-gray-dark;
+}
+
+.sidebar-button .mfx-ripple-generator,
+.sidebar-button-variant .mfx-ripple-generator,
+.sidebar-botton-menu .mfx-ripple-generator{
+    -mfx-ripple-color: transparent;
+}
+
+
+.avatar {
+    -fx-fit-height: 32px;
+    -fx-fit-width: 32px;
+
+    -fx-padding: 0;
+    -fx-image: url('../../image/avatar/gradient_watergreen.png');
+}
+
+
+.VBOX-nav-botton-menu .hbox-area-button-language {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+.VBOX-nav-botton-menu .hbox-area-button-language .mfx-combo-box {
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-min-width: 175px;
+    -fx-pref-width: 175px;
+    -fx-max-width: 175px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 7px;
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-radius: 7px;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 11px;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -mfx-float-mode: DISABLED;
+}
+
+.VBOX-nav-botton-menu .hbox-area-button-language  .mfx-combo-box .text-field,
+.VBOX-nav-botton-menu .hbox-area-button-language  .mfx-combo-box > .text,
+.VBOX-nav-botton-menu .hbox-area-button-language .mfx-combo-box *{
+    -fx-background-color: transparent;
+    -fx-highlight-fill: -mfx-highlight-color;
+}
+
+.VBOX-nav-botton-menu .hbox-area-button-language .mfx-combo-box .caret .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.VBOX-nav-botton-menu .hbox-area-button-language .mfx-combo-box .caret .mfx-font-icon {
+    -mfx-description: "fas-chevron-down";
+    -mfx-color: -mfx-color-black-text-primary;
+    -mfx-size: 11px;
+    -fx-opacity: 0;
+}
+.VBOX-nav-botton-menu .hbox-area-button-language .mfx-combo-box:hover .caret .mfx-font-icon {
+    -fx-opacity: 1;
+}
+
+
+.VBOX-nav-botton-menu .hbox-area-button-language  .mfx-combo-box-cell {
+    -fx-background-color: -mfx-under-window-background;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 13px;
+    -fx-padding: 8px 16px;
+}
+
+.VBOX-nav-botton-menu .hbox-area-button-language .mfx-combo-box-cell:hover {
+    -fx-background-color: -mfx-gray-light;
+}
+
+
+.mfx-combo-box-cell:selected {
+    -fx-background-color: -mfx-gray-dark;
+}
+
+.selected-button-variant {
+    -fx-border-color: -mfx-black !important;
+    -fx-text-fill: -mfx-color-black-text-primary !important;
+}
+
+.selected-button-variant .icon-button {
+    -fx-icon-color: -mfx-color-black-text-primary !important;
+}
+
+.selected-button {
+    -fx-background-color: -mfx-under-window-background !important;
+    -fx-text-fill: -mfx-color-black-text-primary !important;
+}
+
+.selected-button .icon-button {
+    -fx-icon-color: -mfx-color-black-text-primary !important;
+}
+
+.icon-button-home {
+    -fx-icon-code: "fltfal-home-16";
+    -fx-icon-size: 16px;
+}
+
+.icon-button-exercise {
+    -fx-icon-code: "fltfal-copy-24";
+    -fx-icon-size: 16px;
+    -fx-rotate: 90deg;
+}
+
+.icon-button-statistics {
+    -fx-icon-code: "fltfal-data-histogram-24";
+    -fx-icon-size: 16px;
+}
+
+.icon-buttons-ranking {
+    -fx-icon-code: "fltfmz-trophy-24";
+    -fx-icon-size: 16px;
+}
+
+.icon-button-create {
+    -fx-icon-code: "fltfal-copy-add-24";
+    -fx-icon-size: 16px;
+    -fx-rotate: 90deg;
+}
+
+.icon-button-profile {
+    -fx-icon-code: "mdi2a-account-edit-outline";
+    -fx-icon-size: 13px;
+}
+
+.button-menu-item:hover #icon-button-profile {
+    -fx-icon-code: "mdi2a-account-edit";
+}
+
+.icon-button-logout {
+    -fx-icon-code: "mdi2l-logout";
+    -fx-icon-size: 13px;
+}

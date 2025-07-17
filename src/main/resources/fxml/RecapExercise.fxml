@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane alignment="CENTER" styleClass="component" stylesheets="@../css/component/recap-exercise.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.component.RecapExerciseController">
+   <children>
+      <MFXScrollPane fitToHeight="true" fitToWidth="true" styleClass="root-container" stylesheets="@../css/component/recap-exercise.css">
+         <content>
+            <StackPane alignment="CENTER">
+               <children>
+                  <VBox fx:id="content" alignment="CENTER" styleClass="content">
+                     <children>
+                        <VBox fx:id="cardStudentContainer" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="component" VBox.vgrow="ALWAYS">
+                           <children>
+                              <fx:include fx:id="cardExerciseStudent" source="CardExerciseStudent.fxml" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="containerForumQuestion" styleClass="vbox-item" />
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </content>
+      </MFXScrollPane>
+   </children>
+</StackPane>

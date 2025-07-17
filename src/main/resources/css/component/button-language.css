@@ -1,0 +1,85 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.hbox-area-button-language {
+    -fx-min-width: 120px;
+    -fx-min-height: 60px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 60px;
+    -fx-max-width: 120px;
+    -fx-max-height: 60px;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
+}
+
+.mfx-combo-box {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+
+    -fx-padding: 0px 8px;
+    -fx-alignment: center-left;
+
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-prompt-text-fill: -mfx-color-black-text-secondary;
+    -mfx-float-mode: BORDER;
+    -mfx-border-gap: 4px;
+    -mfx-gap:4px;
+
+}
+.mfx-combo-box .text-field,
+.mfx-combo-box > .text,
+.mfx-combo-box *{
+    -fx-background-color: transparent;
+    -fx-highlight-fill: -mfx-highlight-color;
+}
+
+.mfx-combo-box .floating-text {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 13px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-background-color: transparent;
+}
+.mfx-combo-box .caret .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.mfx-combo-box .caret .mfx-font-icon {
+    -mfx-description: "fas-chevron-down";
+    -mfx-color: -mfx-color-black-text-primary;
+}
+
+.mfx-combo-box-cell {
+    -fx-background-color: -mfx-white;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 13px;
+    -fx-padding: 8px 16px;
+}
+
+.mfx-combo-box-cell:hover {
+    -fx-background-color: -mfx-under-window-background;
+}
+
+.mfx-combo-box-popup {
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-under-window-background;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-padding: 4px;
+}
+
+.mfx-combo-box-cell:selected {
+    -fx-background-color: -mfx-gray-dark;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}

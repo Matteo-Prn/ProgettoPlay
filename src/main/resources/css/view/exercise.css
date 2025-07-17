@@ -1,0 +1,222 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.root {
+    -fx-pref-width: 1280px;
+    -fx-min-width: 1280px;
+    -fx-max-width: 1280px;
+    -fx-pref-height: 720px;
+    -fx-min-height: 720px;
+    -fx-max-height: 720px;
+    -fx-background-color: -mfx-white;
+}
+
+#center {
+    -fx-background-color: -mfx-white;
+}
+
+.vbox-main-center {
+    -fx-background-color: transparent;
+    -fx-padding: 44px 44px;
+    -fx-spacing: 24px;
+    -fx-alignment: top-left;
+}
+
+.component {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 4px;
+}
+.component.center-left {
+    -fx-alignment: center-left;
+}
+.component.center {
+    -fx-alignment: center;
+}
+.component.spacing {
+    -fx-spacing: 36px;
+}
+
+
+.text {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+}
+.text.title-page {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+}
+.text.info {
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 15px;
+    -fx-padding: 8px 16px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+}
+.text.filter {
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-padding: 8px 16px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+}
+
+#icon-info {
+    -fx-icon-code :"mdi2i-information";
+    -fx-icon-size:15px;
+    -fx-icon-color: -mfx-color-black-text-secondary;
+}
+.button-page {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+
+    -fx-background-color: transparent;
+    -fx-text-fill: -mfx-color-black-text-secondary;
+    -fx-font-family: "SF Pro Display Semibold";
+    -fx-font-size: 15px;
+    -fx-padding: 0px;
+    -fx-alignment: center;
+}
+
+
+.button-page:hover,
+.button-page:focused,
+.button-page:pressed,
+.button-page:selected,
+.button-page:armed {
+    -fx-text-fill: -mfx-color-blue-text-primary;
+    -fx-border-color: -mfx-color-blue-text-primary;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 0px;
+    -fx-alignment: center;
+}
+.button-page:disabled {
+    -fx-text-fill: -mfx-color-black-text-secondary;
+}
+.button-page .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.button-page.selected {
+    -fx-text-fill: -mfx-color-blue-text-primary;
+    -fx-border-color: -mfx-color-blue-text-primary;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-radius: 0px;
+    -fx-alignment: center;
+}
+.root-container {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-spacing: 24px;
+}
+.root-container .scroll-bar:horizontal {
+    -fx-opacity: 0px;
+}
+
+.root-container .scroll-bar:vertical {
+    -fx-opacity: 0px;
+}
+
+.container-exercise {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-spacing: 24px;
+}
+
+
+#icon-filer {
+    -fx-icon-code: "mdi2f-filter-variant";
+    -fx-icon-size: 17px;
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+.dialogon-close {
+    -fx-min-width: 460px;
+    -fx-pref-width: 460px;
+    -fx-max-width: 460px;
+    -fx-min-height: 200px;
+    -fx-pref-height: 200px;
+    -fx-max-height: 200px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.text.title-dialogon-close {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 17px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.button-dialogon {
+    -fx-min-width: 100px;
+    -fx-pref-width: 100px;
+    -fx-max-width: 100px;
+    -fx-min-height: 32px;
+    -fx-pref-height: 32px;
+    -fx-max-height: 32px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.button-dialogon:hover,
+.button-dialogon:pressed,
+.button-dialogon:focused,
+.button-dialogon:selected {
+    -fx-background-color: -mfx-black;
+    -fx-text-fill: -mfx-color-white-text-primary;
+}
+.button-dialogon .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+#icon-close-dialog {
+    -fx-icon-code: "mdi2c-close";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-black-text-secondary;
+}
+.button-dialog-close {
+    -fx-min-width: 22px;
+    -fx-pref-width: 22px;
+    -fx-max-width: 22px;
+    -fx-min-height: 22px;
+    -fx-pref-height: 22px;
+    -fx-max-height: 22px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-content-display: graphic-only;
+    -fx-alignment: center;
+}
+.button-dialog-close:hover {
+    -fx-background-color: -mfx-red-alert-background;
+}
+.button-dialog-close:hover #icon-close-dialog {
+    -fx-icon-color: -mfx-red-error;
+}
+.button-dialog-close .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.text.dialog-message {
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 13px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}

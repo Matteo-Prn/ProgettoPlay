@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.CustomMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="sidebar" stylesheets="@../css/component/sidebar.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.component.SidebarStudentController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="HBOX-nav-button">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="icon-logo" />
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="VBOX-nav-button">
+         <children>
+            <HBox prefHeight="0.0" prefWidth="191.0" styleClass="HBOX-nav-button">
+               <children>
+                  <MFXButton fx:id="homeButton" prefWidth="192.0" styleClass="sidebar-button" text="La mia pagina">
+                     <graphic>
+                        <FontIcon>
+                           <styleClass>
+                              <String fx:value="icon-button-home" />
+                              <String fx:value="icon-button" />
+                           </styleClass>
+                        </FontIcon>
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="191.0" styleClass="HBOX-nav-button">
+               <children>
+                  <MFXButton fx:id="exerciseButton" prefWidth="192.0" styleClass="sidebar-button" text="Esercizi">
+                     <graphic>
+                        <FontIcon>
+                           <styleClass>
+                              <String fx:value="icon-button-exercise" />
+                              <String fx:value="icon-button" />
+                           </styleClass>
+                        </FontIcon>
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="191.0" styleClass="HBOX-nav-button">
+               <children>
+                  <MFXButton fx:id="staticsButton" prefWidth="192.0" styleClass="sidebar-button" text="Statistiche">
+                     <graphic>
+                        <FontIcon>
+                           <styleClass>
+                              <String fx:value="icon-button-statistics" />
+                              <String fx:value="icon-button" />
+                           </styleClass>
+                        </FontIcon>
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="191.0" styleClass="HBOX-nav-button">
+               <children>
+                  <MFXButton fx:id="rankingButton" prefWidth="192.0" styleClass="sidebar-button" text="Classifica">
+                     <graphic>
+                        <FontIcon>
+                           <styleClass>
+                              <String fx:value="icon-button" />
+                              <String fx:value="icon-buttons-ranking" />
+                           </styleClass>
+                        </FontIcon>
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="129.0" prefWidth="191.0" styleClass="VBOX-nav-BOTTOM" VBox.vgrow="ALWAYS">
+         <children>
+            <MenuButton fx:id="menuButton" mnemonicParsing="false" prefWidth="260.0" styleClass="sidebar-botton-menu" text="Matt15">
+               <items>
+                  <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+                     <content>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="VBOX-nav-item-menu">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="HBOX-text-button-menu">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="avatar" />
+                                    <VBox prefHeight="200.0" prefWidth="100.0" styleClass="VBOX-text-button-menu">
+                                       <children>
+                                          <Label fx:id="usernameMenuButton" styleClass="label-username-menu" text="Username" />
+                                          <Label fx:id="roleMenuButton" styleClass="label-role-menu" text="Role" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="HBOX-nav-separator">
+                                 <children>
+                                    <Region id="separator-menu-item" prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="languageSection" text="Cambia la lingua">
+                                       <styleClass>
+                                          <String fx:value="label-role-menu" />
+                                          <String fx:value="section" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="HBOX-nav-separator" />
+                                    <String fx:value="left" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox maxWidth="199.0" prefHeight="32.0" prefWidth="199.0" styleClass="VBOX-nav-botton-menu">
+                                 <children>
+                                    <fx:include source="ButtonLanguage.fxml" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="HBOX-nav-separator">
+                                 <children>
+                                    <Region id="separator-menu-item" prefHeight="200.0" prefWidth="200.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="VBOX-nav-botton-menu">
+                                 <children>
+                                    <MFXButton fx:id="logoutButton" prefHeight="27.0" prefWidth="227.0" styleClass="button-menu-item" text="Logout">
+                                       <graphic>
+                                          <FontIcon>
+                                             <styleClass>
+                                                <String fx:value="icon-button-logout" />
+                                                <String fx:value="icon-button" />
+                                             </styleClass>
+                                          </FontIcon>
+                                       </graphic>
+                                    </MFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </CustomMenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="avatar" />
+               </graphic>
+            </MenuButton>
+         </children>
+      </VBox>
+   </children>
+</VBox>

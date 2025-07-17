@@ -1,0 +1,75 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssInvalidPseudoSelector" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="59">
+            <item index="0" class="java.lang.String" itemvalue="-mfx-red" />
+            <item index="1" class="java.lang.String" itemvalue="-mfx-color-green-success" />
+            <item index="2" class="java.lang.String" itemvalue="-mfx-color-white-secondary" />
+            <item index="3" class="java.lang.String" itemvalue="-mfx-color-white" />
+            <item index="4" class="java.lang.String" itemvalue="-mfx-color-white-secondary-light" />
+            <item index="5" class="java.lang.String" itemvalue="-mfx-color-white-dark" />
+            <item index="6" class="java.lang.String" itemvalue="-mfx-color-black" />
+            <item index="7" class="java.lang.String" itemvalue="-mfx-color-black-light" />
+            <item index="8" class="java.lang.String" itemvalue="-mfx-color-black-translucent" />
+            <item index="9" class="java.lang.String" itemvalue="-mfx-color-gray" />
+            <item index="10" class="java.lang.String" itemvalue="-mfx-color-gray-light" />
+            <item index="11" class="java.lang.String" itemvalue="-mfx-color-gray-dark" />
+            <item index="12" class="java.lang.String" itemvalue="-mfx-color-orange" />
+            <item index="13" class="java.lang.String" itemvalue="-mfx-color-orange-dark" />
+            <item index="14" class="java.lang.String" itemvalue="-mfx-color-orange-warning" />
+            <item index="15" class="java.lang.String" itemvalue="-mfx-color-red" />
+            <item index="16" class="java.lang.String" itemvalue="-mfx-color-red-ripple" />
+            <item index="17" class="java.lang.String" itemvalue="-mfx-color-green" />
+            <item index="18" class="java.lang.String" itemvalue="-mfx-color-green-ripple" />
+            <item index="19" class="java.lang.String" itemvalue="-mfx-color-green-water" />
+            <item index="20" class="java.lang.String" itemvalue="-mfx-color-green-water-ripple" />
+            <item index="21" class="java.lang.String" itemvalue="-mfx-color-blue" />
+            <item index="22" class="java.lang.String" itemvalue="-mfx-color-blue-ripple" />
+            <item index="23" class="java.lang.String" itemvalue="-mfx-color-sky-blue" />
+            <item index="24" class="java.lang.String" itemvalue="-mfx-color-fuchsia" />
+            <item index="25" class="java.lang.String" itemvalue="-mfx-color-violet" />
+            <item index="26" class="java.lang.String" itemvalue="-mfx-color-violet-light" />
+            <item index="27" class="java.lang.String" itemvalue="-mfx-color-yellow" />
+            <item index="28" class="java.lang.String" itemvalue="-mfx-color-yellow-ripple" />
+            <item index="29" class="java.lang.String" itemvalue="-mfx-color-pink" />
+            <item index="30" class="java.lang.String" itemvalue="-mfx-color-cyan" />
+            <item index="31" class="java.lang.String" itemvalue="-mfx-color-primary-text" />
+            <item index="32" class="java.lang.String" itemvalue="-mfx-color-primary-text-light" />
+            <item index="33" class="java.lang.String" itemvalue="-mfx-gradient-soft-light" />
+            <item index="34" class="java.lang.String" itemvalue="-mfx-gradient-soft" />
+            <item index="35" class="java.lang.String" itemvalue="-mfx-gradient-quaternary" />
+            <item index="36" class="java.lang.String" itemvalue="-mfx-gradient-tertiary" />
+            <item index="37" class="java.lang.String" itemvalue="-mfx-gradient-secondary" />
+            <item index="38" class="java.lang.String" itemvalue="-mfx-gradient-primary" />
+            <item index="39" class="java.lang.String" itemvalue="-mfx-gradient-logo-left" />
+            <item index="40" class="java.lang.String" itemvalue="-mfx-gradient-logo-right" />
+            <item index="41" class="java.lang.String" itemvalue="-mfx-gradient-logo-down" />
+            <item index="42" class="java.lang.String" itemvalue="-mfx-gradient-logo-cap" />
+            <item index="43" class="java.lang.String" itemvalue="-mfx-color-gray-text" />
+            <item index="44" class="java.lang.String" itemvalue="-mfx-color-green-water-thin" />
+            <item index="45" class="java.lang.String" itemvalue="-mfx-color-red-alert" />
+            <item index="46" class="java.lang.String" itemvalue="-mfx-color-white-light" />
+            <item index="47" class="java.lang.String" itemvalue="-mfx-color-white-secondary-thin" />
+            <item index="48" class="java.lang.String" itemvalue="-mfx-color-red-thin" />
+            <item index="49" class="java.lang.String" itemvalue="-mfx-red-ligth" />
+            <item index="50" class="java.lang.String" itemvalue="-mfx-red-light-contrast" />
+            <item index="51" class="java.lang.String" itemvalue="-mfx-red-dark" />
+            <item index="52" class="java.lang.String" itemvalue="-mfx-red-dark-contrast" />
+            <item index="53" class="java.lang.String" itemvalue="-mfx-color-selection-unfocused" />
+            <item index="54" class="java.lang.String" itemvalue="-mfx-transparent" />
+            <item index="55" class="java.lang.String" itemvalue="-mfx-white" />
+            <item index="56" class="java.lang.String" itemvalue="-mfx-color-separator" />
+            <item index="57" class="java.lang.String" itemvalue="-mfx-color-black-text-primary" />
+            <item index="58" class="java.lang.String" itemvalue="-mfx-highlight-color" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

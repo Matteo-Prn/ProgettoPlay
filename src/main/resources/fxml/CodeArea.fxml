@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import org.fxmisc.richtext.CodeArea?>
+
+
+<CodeArea fx:id="codeArea" stylesheets="@../css/component/code-area.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.component.CodeAreaController">
+   <styleClass>
+      <String fx:value="code-area" />
+      <String fx:value="lineno" />
+   </styleClass>
+</CodeArea>

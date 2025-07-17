@@ -1,0 +1,110 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.root {
+    -fx-min-width: 1280px;
+    -fx-pref-width: 1280px;
+    -fx-min-height: 720px;
+    -fx-pref-height: 720px;
+
+    -fx-background-color: -mfx-white;
+}
+.center-content {
+    -fx-padding: 44px;
+    -fx-spacing: 44px;
+}
+
+.header-center-content {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-alignment: center-left;
+}
+.text {
+    -fx-text-fill: -mfx-color-white-text-primary;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+}
+
+.text.header {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+}
+.text.rectangle-username {
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 17px;
+}
+.text.rectangle-number {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 44px;
+}
+.text.rectangle-score {
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+}
+
+
+
+.compontent {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+}
+
+.rectangle {
+    -fx-min-width: 240px;
+    -fx-pref-width: 240px;
+    -fx-max-width: 240px;
+    -fx-min-height: 160px;
+    -fx-pref-height: 160px;
+    -fx-max-height: 160px;
+    -fx-background-color: -mfx-black;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 16px;
+    -fx-alignment: top-center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.rectangle:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-translate-z: 0;
+}
+.center {
+    -fx-alignment: center;
+}
+.spacing-4 {
+    -fx-spacing: 4px;
+}
+.spacing-24 {
+    -fx-spacing: 24px;
+}
+
+#table {
+    -fx-border-color: -mfx-under-window-background;
+    -fx-border-width: 1.5px;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+#table .columns-container {
+    -fx-border-color: -mfx-under-window-background;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-padding: 16px;
+}
+
+#table .virtual-flow {
+    -fx-border-color: transparent;
+    -fx-padding: 16px;
+}
+#table .default-footer {
+    -fx-opacity: 0;
+}

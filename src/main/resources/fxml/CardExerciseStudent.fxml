@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="310.0" styleClass="VerticalCardExercise" stylesheets="@../css/component/card-exercise.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.component.CardExerciseStudentController">
+   <children>
+      <StackPane prefHeight="232.0" prefWidth="380.0" styleClass="wrapper-icon">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="center">
+               <children>
+                  <FontIcon fx:id="iconExercise" styleClass="icon-exercise-card" />
+               </children>
+            </VBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" styleClass="header-wrapper">
+               <children>
+                  <Label fx:id="category" text="Completa il codice">
+                     <styleClass>
+                        <String fx:value="text" />
+                        <String fx:value="category" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+      <VBox prefHeight="161.0" prefWidth="380.0" styleClass="center-card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="53.0" prefWidth="345.0" styleClass="content-title-topic" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label fx:id="title" text="Titolo">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="titlee" />
+                           </styleClass>
+                        </Label>
+                        <Label fx:id="topic" text="Fondamenti di programmazione" VBox.vgrow="ALWAYS">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="topic" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="SOMETIMES">
+                     <children>
+                        <Label fx:id="difficulty" text="Difficoltà">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="difficulty" />
+                           </styleClass>
+                           <graphic>
+                              <FontIcon id="icon-difficulty" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="component" />
+                  <String fx:value="center" />
+               </styleClass>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="component">
+               <children>
+                  <TextArea fx:id="description" editable="false" prefHeight="200.0" prefWidth="200.0" styleClass="deescrption" text="Descrizione dell'ersico asdssamfsafsa" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox fx:id="containerScore" prefHeight="100.0" prefWidth="200.0" styleClass="container-score">
+               <children>
+                  <Label fx:id="scoreText" text="Punteggio">
+                     <styleClass>
+                        <String fx:value="text" />
+                        <String fx:value="score" />
+                     </styleClass>
+                     <graphic>
+                        <FontIcon id="icon-score" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="scoreUser" text="0">
+                     <styleClass>
+                        <String fx:value="text" />
+                        <String fx:value="score" />
+                     </styleClass>
+                  </Label>
+                  <Label text="/">
+                     <styleClass>
+                        <String fx:value="text" />
+                        <String fx:value="score" />
+                     </styleClass>
+                  </Label>
+                  <Label fx:id="scoreTotal" text="30">
+                     <styleClass>
+                        <String fx:value="text" />
+                        <String fx:value="score" />
+                     </styleClass>
+                  </Label>
+               </children>
+            </HBox>
+            <Region prefHeight="35.0" prefWidth="16.0" HBox.hgrow="ALWAYS" />
+            <MFXButton fx:id="playBtn" styleClass="button-play" text="Inizia">
+               <graphic>
+                  <FontIcon id="icon-play" />
+               </graphic>
+            </MFXButton>
+         </children>
+         <styleClass>
+            <String fx:value="component" />
+            <String fx:value="padding" />
+            <String fx:value="center" />
+         </styleClass>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,75 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.notification {
+    -fx-min-width: 350px;
+    -fx-pref-width: 350;
+    -fx-max-width: 350px;
+    -fx-min-height: 70px;
+    -fx-pref-height: 70px;
+    -fx-max-height: 70px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+    -fx-alignment: center-left;
+    -fx-padding: 8px 16px;
+    -fx-spacing: 16px;
+}
+.wrapper-icon-notfy {
+    -fx-min-width: 42px;
+    -fx-pref-width: 42px;
+    -fx-max-width: 42px;
+    -fx-min-height: 42px;
+    -fx-pref-height: 42px;
+    -fx-max-height: 42px;
+    -fx-alignment: center;
+}
+.wrapper-background-color-red {
+    -fx-background-color: -mfx-red-alert-background;
+    -fx-background-radius: 50%;
+}
+.wrapper-background-color-yellow {
+    -fx-background-color: -mfx-yellow-alert-background;
+    -fx-background-radius: 50%;
+}
+.wrapper-background-color-blue {
+    -fx-background-color: -mfx-blue-alert-background;
+    -fx-background-radius: 50%;
+}
+.wrapper-background-color-green {
+    -fx-background-color: -mfx-green-alert-background;
+    -fx-background-radius: 50%;
+}
+
+.icon-error {
+    -fx-icon-color: -mfx-red-error;
+    -fx-icon-size: 22px;
+}
+.icon-warning {
+    -fx-icon-color: -mfx-yellow-alert-icon;
+    -fx-icon-size: 22px;
+}
+.icon-info {
+    -fx-icon-color: -mfx-blue-alert-icon;
+    -fx-icon-size: 22px;
+}
+.icon-success {
+    -fx-icon-color: -mfx-green-alert-icon;
+    -fx-icon-size: 22px;
+}
+.content-notification {
+    -fx-alignment: center-left;
+    -fx-spacing: 4px;
+}
+.text {
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.text.title-notification {
+    -fx-font-size: 15px;
+    -fx-font-family: "SF Pro Display SemiBold";
+}
+.text.message-notification {
+    -fx-font-size: 13px;
+    -fx-font-family: "SF Pro Display Regular";
+}
+

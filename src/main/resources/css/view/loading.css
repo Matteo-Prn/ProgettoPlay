@@ -1,0 +1,51 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.root {
+    -fx-min-width: 1280px;
+    -fx-min-height: 720px;
+    -fx-pref-width: 1280px;
+    -fx-pref-height: 720px;
+    -fx-background-color: -mfx-white;
+}
+
+.center {
+    -fx-alignment: center;
+}
+
+.text-welcome{
+    -fx-font-family: "SF Pro Display Bold";
+    -fx-text-fill: -mfx-gradient2;
+    -fx-font-size: 128px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 6, 0, 0, 2);
+}
+
+.mfx-button {
+    -fx-min-width: 220px;
+    -fx-pref-width: 220px;
+    -fx-max-width: 220px;
+    -fx-min-height: 44px;
+    -fx-pref-height: 44px;
+    -fx-max-height: 44px;
+    -fx-background-color: -mfx-black;
+    -fx-background-radius: 9px;
+    -fx-text-fill: -mfx-color-white-text-secondary;
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 22px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 6, 0, 0, 2);
+}
+.mfx-button:hover {
+    -fx-text-fill: -mfx-color-white-text-primary;
+}
+
+.mfx-button .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+#image-logo {
+    -fx-image: url('/image/logo/logo-fill.png');
+    -fx-fit-width: 200px;
+    -fx-fit-height: 200px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 6, 0, 0, 2);
+}
+

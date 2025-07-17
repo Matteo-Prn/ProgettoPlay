@@ -1,0 +1,86 @@
+@import '../../fonts/Fonts.css';
+
+.root {
+    -fx-background-color: white;
+}
+
+.code-area {
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 14px;
+}
+
+.keyword {
+    -fx-fill: purple;
+    -fx-font-family: "JetBrains Mono Bold";
+    -fx-text-background-color: transparent;
+}
+
+.semicolon {
+    -fx-font-family: "JetBrains Mono Bold";
+    -fx-text-background-color: transparent;
+}
+
+.paren {
+    -fx-fill: firebrick;
+    -fx-font-family: "JetBrains Mono Bold";
+    -fx-text-background-color: transparent;
+}
+
+.bracket {
+    -fx-fill: darkgreen;
+    -fx-font-family: "JetBrains Mono Bold";
+    -fx-text-background-color: transparent;
+}
+
+.brace {
+    -fx-fill: teal;
+    -fx-font-family: "JetBrains Mono Bold";
+    -fx-text-background-color: transparent;
+}
+
+.string {
+    -fx-fill: blue;
+    -fx-text-background-color: transparent;
+}
+
+.comment {
+    -fx-fill: cadetblue;
+    -fx-text-background-color: transparent;
+}
+
+.number {
+    -fx-fill: darkblue;
+    -fx-text-background-color: transparent;
+}
+
+.annotation {
+    -fx-fill: #808000;
+    -fx-font-weight: bold;
+    -fx-text-background-color: transparent;
+}
+
+.operator {
+    -fx-fill: #cc7832;
+    -fx-text-background-color: transparent;
+}
+
+.paragraph-box:has-caret {
+    -fx-background-color: #FFFFFF;
+    -fx-text-background-color: transparent;
+}
+
+.code-area .text {
+    -fx-line-spacing: 1.1;
+}
+
+.code-area .caret {
+    -fx-stroke: black;
+}
+
+.lineno {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #606366;
+    -fx-font-family: "JetBrains Mono";
+    -fx-font-size: 12px;
+    -fx-padding: 0 10 0 5;
+}

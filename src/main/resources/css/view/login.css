@@ -1,0 +1,328 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.root {
+    -fx-min-width: 1280px;
+    -fx-pref-width: 1280px;
+    -fx-min-height: 720px;
+    -fx-pref-height: 720px;
+
+    -fx-background-color: -mfx-white;
+}
+
+.header {
+    -fx-alignment: center-right;
+    -fx-padding: 32px 40px 32px 40px;
+}
+.center {
+    -fx-alignment: center;
+    -fx-min-width: 400px;
+    -fx-pref-width: 400px;
+    -fx-max-width: 400px;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: 650px;
+    -fx-background-color: transparent;
+}
+.section-title {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-alignment: center;
+    -fx-padding: 16px 8px;
+    -fx-spacing: 8px;
+
+}
+.card-content {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-padding: 24px;
+    -fx-background-color: transparent;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-spacing: 16px;
+
+}
+
+.hbox-component {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 4px;
+}
+.hbox-component.center {
+    -fx-alignment: center;
+}
+
+.vbox-component {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 4px;
+}
+
+#icon-logo {
+    -fx-fit-height: 48px;
+    -fx-fit-width: 48px;
+    -fx-padding: 0;
+    -fx-image: url('../../image/logo/logo-fill.png');
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+
+.text-title {
+    -fx-font-family: "SF Pro Display Bold";
+    -fx-font-size: 26px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.text-title.play {
+    -fx-text-fill: -mfx-gradient2;
+}
+.text-subtitle {
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 17px;
+    -fx-text-fill: -mfx-gradient2;
+}
+
+.text-floating {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.text-error {
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 11px;
+    -fx-text-fill: -mfx-red-error;
+}
+
+.icon-error {
+    -fx-icon-code: "mdi2a-alert-circle";
+    -fx-icon-size: 13px;
+    -fx-icon-color: -mfx-red-error;
+}
+
+.text-separator {
+    -fx-pref-width: -1;
+    -fx-pref-height: -1;
+
+    -fx-text-fill: -mfx-color-black-text-tertiary;
+    -fx-font-family: 'SF Pro Display Regular';
+    -fx-font-size: 13px;
+}
+
+.field{
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+
+    -fx-background-color: -mfx-gray-dark;
+    -fx-background-radius: 9px;
+    -fx-border-color: transparent;
+
+    -fx-padding: 3px 8px;
+
+    -fx-font-family: 'SF Pro Display Regular';
+    -fx-font-size: 15px;
+
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-prompt-text-fill: -mfx-color-black-text-secondary;
+    -fx-highlight-fill: -mfx-highlight-color;
+    -fx-highlight-text-fill: -mfx-color-black-text-primary;
+}
+.mfx-password-field {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+
+    -fx-background-color: -mfx-gray-dark;
+    -fx-background-radius: 9px;
+    -fx-border-color: transparent;
+    -fx-padding: 0px 8px;
+    -fx-font-family: 'SF Pro Display Regular';
+    -fx-font-size: 15px;
+
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-prompt-text-fill: -mfx-color-black-text-secondary;
+
+    -mfx-float-mode: DISABLED;
+}
+
+.mfx-password-field .mfx-icon-wrapper .eye-icon {
+    -mfx-color: -mfx-color-black-text-primary;
+    -mfx-size: 15px;
+}
+
+.mfx-password-field .mfx-icon-wrapper .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.mfx-password-field .text-field,
+.mfx-password-field > .text,
+.mfx-password-field *{
+    -fx-highlight-fill: -mfx-highlight-color;
+}
+
+.field:hover,
+.mfx-password-field:hover {
+    -fx-background-color: -mfx-gray-light;
+}
+
+.invalid-field {
+    -fx-background-color: -mfx-white !important;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-red-error !important;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-text-fill: -mfx-red-error !important;
+}
+.invalid-field:hover {
+    -fx-background-color: -mfx-white !important;
+}
+
+
+.button-login {
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+
+    -fx-padding: 3px 8px;
+
+    -fx-background-color: -mfx-black-contrast;
+    -fx-background-radius: 9px;
+
+    -fx-text-fill: -mfx-color-white-text-secondary;
+    -fx-font-family: 'SF Pro Display Semibold';
+    -fx-font-size: 15px;
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 6, 0, 0, 2);
+
+}
+.button-login .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.button-login:hover {
+    -fx-background-color: -mfx-black;
+    -fx-text-fill: -mfx-color-white-text-primary;
+}
+
+.button-login.button-register {
+    -fx-background-color: transparent;
+    -fx-text-fill: -mfx-color-blue-text-primary;
+    -fx-effect: null;
+
+}
+
+.button-register:hover,
+.button-register:pressed,
+.button-register:selected {
+    -fx-underline: true;
+}
+
+.button-register .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+
+.vbox-alert-account {
+    -fx-min-height: 60px;
+    -fx-pref-height: 60px;
+    -fx-max-height: 60px;
+
+    -fx-alignment: top-left;
+    -fx-padding: 8px;
+
+    -fx-background-color: -mfx-yellow-alert-background;
+    -fx-background-radius: 9px;
+}
+.vbox-cardtitle {
+    -fx-min-height: 60px;
+    -fx-pref-height: 60px;
+    -fx-max-height: 60px;
+
+    -fx-alignment: center;
+    -fx-padding: 8px;
+
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+}
+
+.text-cardtitle {
+    -fx-font-family: 'SF Pro Display Semibold';
+    -fx-font-size: 17px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.icon-alert-account-title {
+    -fx-icon-code: "mdi2a-alert";
+    -fx-icon-size: 13px;
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+.text-alert-accoun-title {
+    -fx-font-family: 'SF Pro Display Semibold';
+    -fx-font-size: 13px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+.text-alert-account-message {
+    -fx-font-family: 'SF Pro Display Regular';
+    -fx-font-size: 11px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.button-login.button-admin {
+    -fx-background-color: transparent;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1px;
+    -fx-border-radius: 9px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-font-family: 'SF Pro Display Medium';
+    -fx-font-size: 15px;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+    -fx-effect: null;
+}
+.button-admin .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+.button-admin:hover {
+    -fx-border-color: -mfx-gray-dark!important;
+}
+.icon-login-admin {
+    -fx-icon-code: "mdi2l-login-variant";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+.toggle {
+    -mfx-main: -mfx-green-dark;
+    -mfx-secondary: -mfx-gray-light;
+    -mfx-content-disposition: right;
+    -mfx-gap: 150px;
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-effect: null;
+}
+.toggle .mfx-ripple-generator {
+    -mfx-ripple-color: transparent;
+}
+.toggle .circle {
+    -fx-fill: -mfx-white;
+}
+
+.toggle .line {
+    -fx-opacity: 1;
+}

@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "JetBrains Mono Regular";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Bold";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-Italic.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Bold Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Light";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-Light.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Light Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Medium";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-Medium.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Medium Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono SemiBold";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono SemiBold Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Thin";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-Thin.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono Thin Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-ThinItalic.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono ExtraBold";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono ExtraBold Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono ExtraLight";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains Mono ExtraLight Italic";
+    src: url("/fonts/jetbrainsmono/JetBrainsMono-ExtraLightItalic.ttf");
+}

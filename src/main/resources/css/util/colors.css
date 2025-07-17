@@ -1,0 +1,135 @@
+* {
+    /* System colors */
+    -mfx-white: rgb(255, 255, 255);
+
+    -mfx-black: rgb(20, 20, 20, 1);
+    -mfx-black-contrast: rgb(60, 60, 60, 1);
+
+
+    -mfx-red-ligth: rgba(255, 56, 60, 1);
+    -mfx-red-light-contrast: rgba(233, 21, 45, 1);
+
+    -mfx-red-dark: rgba(255, 66, 69, 1);
+    -mfx-red-dark-contrast: rgba(255, 97, 101, 1);
+
+    -mfx-red-error: rgba(224, 54, 73, 1);
+
+
+    -mfx-orange-light: rgba(255, 141, 40, 1);
+    -mfx-orange-light-contrast: rgba(197, 83, 0, 1);
+
+    -mfx-orange-dark: rgba(255, 146, 48, 1);
+    -mfx-orange-dark-contrast: rgba(255, 160, 86, 1);
+
+    -mfx-yellow-light: rgba(255, 204, 0, 1);
+    -mfx-yellow-light-contrast: rgba(161, 106, 0, 1);
+    -mfx-yellow-gradient: linear-gradient(to right, rgba(251, 227, 0, 1), rgba(245, 194, 0, 1));
+
+    -mfx-yellow-dark: rgba(255, 214, 0, 1);
+    -mfx-yellow-dark-contrast: rgba(254, 223, 67, 1);
+
+
+
+
+    -mfx-green-light: rgba(52, 199, 89, 1);
+    -mfx-green-light-contrast: rgba(0, 137, 50, 1);
+
+    -mfx-green-dark: rgba(48, 209, 88, 1);
+    -mfx-green-dark-contrast: rgba(74, 217, 104, 1);
+
+
+/* Notifiche & Alert */
+    -mfx-yellow-alert-background: rgba(253, 242, 227, 1);
+    -mfx-green-alert-background: rgba(227, 253, 242, 1);
+    -mfx-blue-alert-background: rgba(227, 236, 253, 1);
+    -mfx-red-alert-background: rgba(253, 227, 236, 1);
+/** Icon Notifiche & Alert */
+    -mfx-yellow-alert-icon: rgba(255, 214, 0, 1);
+    -mfx-green-alert-icon: rgba(52, 199, 89, 1);
+    -mfx-blue-alert-icon: rgba(28, 94, 149, 1);
+    /*-mfx-red-error: rgba(224, 54, 73, 1);*/
+
+
+    -mfx-gradient2: linear-gradient(to right,
+    rgba(129, 180, 31, 1),
+    rgba(235, 170, 1, 1),
+    rgba(230, 63, 92, 1),
+    rgba(107, 11, 253, 1),
+    rgba(2, 112, 203, 1)
+    );
+
+    -mfx-purple:rgba(107, 11, 253, 0.5);
+    -mfx-opacity-yellow:rgba(235, 170, 1, 0.5);
+    -mfx-opacity-green: rgba(129, 180, 31, 0.5);
+
+    /* System gray colors */
+    -mfx-gray-light: rgba(228, 228, 228, 1);
+    -mfx-gray-dark: rgba(217, 217, 217, 1);
+
+    /* System background colors */
+    -mfx-under-window-background: rgba(243, 243, 243, 1);
+
+    /* System Material */
+    -mfx-color-header-view: rgba(234, 234, 234, 1);
+
+    -mfx-color-separator: rgba(236, 236, 236, 1);
+
+    /* System text colors */
+    -mfx-color-black-text-primary: rgba(0, 0, 0, 0.85);
+    -mfx-color-black-text-secondary: rgba(0, 0, 0, 0.50);
+    -mfx-color-black-text-tertiary: rgba(0, 0, 0, 0.25);
+
+    -mfx-color-white-text-primary: rgba(255, 255, 255, 0.85);
+    -mfx-color-white-text-secondary: rgba(255, 255, 255, 0.55);
+    -mfx-color-white-text-tertiary: rgba(255, 255, 255, 0.25);
+
+    -mfx-color-white2-text-primary: #E5E5E5;
+    -mfx-color-white2-text-secondary: #7C7C7C;
+    -mfx-color-white2-text-tertiary: #414141;
+
+    -mfx-color-gray-text-primary: #4C4C4C;
+    -mfx-color-gray-text-secondary: #808080;
+    -mfx-color-gray-text-tertiary: #BFBFBF;
+
+    -mfx-color-blue-text-primary: rgba(28, 94, 149, 1);
+    -mfx-color-blue-text-secondary: rgba(28, 94, 149, 0.75);
+    -mfx-color-blue-wrapper: rgba(28, 94, 149, 0.45);
+
+    -mfx-highlight-color: rgba(0, 192, 232, 0.1);
+
+
+
+}
+
+
+/* Tipografia
+LargeTitle: 26px  - line-height: 32px - Bold / Regular
+
+Title1: 22px - line-height: 26px - Bold / Regular
+
+Title2: 17px - line-height: 22px - Bold / Regular
+
+Title3: 15px - line-height: 20px - Bold / Regular
+
+Headline: 13px - line-height: 16px - Heavy / Bold
+
+Body: 13px - line-height: 16px - Semibold / Regular
+
+Callout: 12px - line-height: 15px - Semibold / Regular
+
+Subheadline: 11px - line-height: 14px - Semibold / Regular
+
+Footnote: 10px - line-height: 13px - Semibold / Regular
+
+Caption1: 10px - line-height: 13px -Medium / Regular
+
+Caption2: 10px - line-height: 13px - Semibold / Medium
+*/
+
+/* Ombre */
+/*-mfx-shadow-card: dropshadow(gaussian, rgba(0, 0, 0, 0.14), 32, 0, 0, 8);*/
+/*-mfx-shadow-button: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 6, 0, 0, 2);*/
+/*-mfx-shadow-popup: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);*/
+
+
+

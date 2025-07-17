@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- Connessione al database SQLite -->
+        <property name="hibernate.connection.driver_class">
+            org.sqlite.JDBC
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:sqlite:database/play-javafx.db
+        </property>
+
+        <!-- Dialetto per SQLite -->
+        <property name="dialect">
+            org.hibernate.community.dialect.SQLiteDialect
+        </property>
+
+        <!-- Evita la creazione tabelle HT_ -->
+        <property name="hibernate.id.new_generator_mappings">false</property>
+        <property name="hibernate.id.optimizer.pooled.preferred">none</property>
+
+        <!-- Crea automaticamente le tabelle -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <!-- Mostra le query sulla console -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Entità mappate -->
+        <mapping class="com.play.model.entity.user.User"/>
+        <mapping class="com.play.model.entity.user.Admin"/>
+        <mapping class="com.play.model.entity.user.Student"/>
+        <mapping class="com.play.model.entity.exercise.Exercise"/>
+        <mapping class="com.play.model.embedded.InfoExercise"/>
+        <mapping class="com.play.model.entity.exercise.Question"/>
+        <mapping class="com.play.model.entity.exercise.Answer"/>
+        <mapping class="com.play.model.entity.Score"/>
+
+    </session-factory>
+</hibernate-configuration>

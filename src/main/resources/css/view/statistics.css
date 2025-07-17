@@ -1,0 +1,275 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.root {
+    -fx-min-width: 1280px;
+    -fx-pref-width: 1280px;
+    -fx-min-height: 720px;
+    -fx-pref-height: 720px;
+
+    -fx-background-color: -mfx-white;
+}
+.center-content {
+    -fx-padding: 44px;
+    -fx-spacing: 44px;
+}
+
+.header-center-content {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-alignment: center-left;
+}
+.text {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+}
+
+.text.header {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+}
+.text.content-card {
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 15px;
+}
+.text.content-card-number {
+    -fx-font-family: "SF Pro Display Medium";
+    -fx-font-size: 15px;
+}
+
+.text.card-title {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 17px;
+}
+.text.average {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+    -fx-text-fill: -mfx-color-gray-text-primary;
+}
+
+.compontent {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+}
+
+.card-chart {
+    -fx-min-width: 400px;
+    -fx-pref-width: 400px;
+    -fx-max-width: 400px;
+    -fx-min-height: 200px;
+    -fx-pref-height: 200px;
+    -fx-max-height: 200px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.card-chart:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-translate-z: 0;
+}
+
+.card-average {
+    -fx-min-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-max-width: 340px;
+    -fx-min-height: 120px;
+    -fx-pref-height: 120px;
+    -fx-max-height: 120px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.card-average:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-translate-z: 0;
+}
+
+#icon-smile {
+    -fx-icon-code: "fltfal-emoji-24";
+    -fx-icon-size: 22px;
+    -fx-icon-color: -mfx-black;
+}
+#icon-rank {
+    -fx-icon-code: "fltfmz-trophy-24";
+    -fx-icon-size: 22px;
+    -fx-icon-color: -mfx-black;
+}
+#wrapper-icon {
+    -fx-min-width: 48px;
+    -fx-pref-width: 48px;
+    -fx-max-width: 48px;
+    -fx-min-height: 48px;
+    -fx-pref-height: 48px;
+    -fx-max-height: 48px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-alignment: center;
+}
+
+#icon-legend-color {
+    -fx-icon-code: "mdi2c-checkbox-blank-circle";
+    -fx-icon-size: 15px;
+}
+#icon-legend-color.completed {
+    -fx-icon-color: -mfx-color-blue-text-primary;
+}
+#icon-legend-color.indeterminate {
+    -fx-icon-color: -mfx-black-contrast;
+}
+
+#pieChartStatistics .data0.chart-pie {
+    -fx-pie-color: -mfx-black-contrast;
+}
+
+#pieChartStatistics .data1.chart-pie {
+    -fx-pie-color: -mfx-color-blue-text-primary;
+}
+
+#pieChartStatistics .chart-pie-label-line,
+#pieChartStatistics .chart-pie-label {
+    -fx-opacity: 0;
+}
+
+#pieChartStatistics .pie-chart-plot-background {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 6, 0, 0, 2);
+}
+
+#pieChartStatistics {
+    -fx-border-color: -mfx-white;
+    -fx-border-width: 8px;
+}
+
+#circle {
+    -fx-fill: -mfx-white;
+    -fx-stroke: transparent;
+}
+
+.card-barchart {
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+    -fx-alignment: center;
+}
+
+.bar-chart:vertical .chart-title .text {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 17px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.bar-chart:vertical .chart-content .chart-plot-background {
+    -fx-background-color: -mfx-white;
+}
+.bar-chart:vertical .chart-content .chart-horizontal-grid-lines,
+.bar-chart:vertical .chart-content .chart-vertical-grid-lines {
+    -fx-stroke: transparent;
+}
+
+
+
+.bar-category-find-error {
+    -fx-bar-fill: -mfx-purple;
+}
+.bar-category-output {
+    -fx-bar-fill: -mfx-opacity-yellow;
+}
+.bar-category-solve-code {
+    -fx-bar-fill: -mfx-opacity-green;
+}
+
+
+.center {
+    -fx-alignment: center;
+}
+.spacing-4 {
+    -fx-spacing: 4px;
+}
+.spacing-24 {
+    -fx-spacing: 24px;
+}
+.spacing-44 {
+    -fx-spacing: 44px;
+}
+
+
+/* ADMIN */
+
+.card {
+    -fx-min-width: 340px;
+    -fx-pref-width: 340px;
+    -fx-max-width: 340px;
+    -fx-min-height: 120px;
+    -fx-pref-height: 120px;
+    -fx-max-height: 120px;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-padding: 16px;
+    -fx-spacing: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.12), 24, 0, 0, 6);
+}
+.card:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-translate-z: 0;
+}
+.text.titleCard {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 17px;
+}
+
+.text.number {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 22px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+}
+
+.text.exercise-section {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 17px;
+}
+
+#wrapper-icon {
+    -fx-min-width: 48px;
+    -fx-pref-width: 48px;
+    -fx-max-width: 48px;
+    -fx-min-height: 48px;
+    -fx-pref-height: 48px;
+    -fx-max-height: 48px;
+    -fx-background-color: -mfx-under-window-background;
+    -fx-background-radius: 9px;
+    -fx-alignment: center;
+}
+
+#icon-statistics {
+    -fx-icon-code: "fltfal-data-histogram-24";
+    -fx-icon-size: 22px;
+    -fx-icon-color: -mfx-color-black-text-primary;
+}
+
+#icon-exercises {
+    -fx-icon-code: "fltfal-copy-24";
+    -fx-icon-size: 22px;
+    -fx-icon-color: -mfx-color-black-text-primary;
+    -fx-rotate: 90deg;
+}
+#icon-users {
+    -fx-icon-code: "mdi2a-account-multiple";
+    -fx-icon-size: 22px;
+    -fx-icon-color: -mfx-color-black-text-primary;
+}

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="container" stylesheets="@../css/component/forum-question.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.component.ForumQuestionController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="floatingQuestion" text="Domanda">
+               <styleClass>
+                  <String fx:value="text" />
+                  <String fx:value="title-forum" />
+               </styleClass>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="hbox-component" />
+            <String fx:value="center" />
+         </styleClass>
+      </HBox>
+      <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="vbox-component">
+         <children>
+            <VBox fx:id="containerCodeWrite" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <fx:include fx:id="coreAreaWrite" source="CodeArea.fxml" />
+               </children>
+               <styleClass>
+                  <String fx:value="vbox-component" />
+                  <String fx:value="center" />
+               </styleClass>
+            </VBox>
+            <VBox fx:id="containerCodePreview" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <fx:include fx:id="coreAreaPreview" source="CodeArea.fxml" />
+               </children>
+               <styleClass>
+                  <String fx:value="vbox-component" />
+                  <String fx:value="center" />
+               </styleClass>
+            </VBox>
+         </children>
+      </StackPane>
+      <HBox prefHeight="19.0" prefWidth="517.0">
+         <children>
+            <Label fx:id="errorQuestion" text="Domanda">
+               <styleClass>
+                  <String fx:value="text" />
+                  <String fx:value="error" />
+               </styleClass>
+               <graphic>
+                  <FontIcon id="icon-error" />
+               </graphic>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="hbox-component" />
+            <String fx:value="center" />
+         </styleClass>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <MFXButton fx:id="switchBtn" styleClass="button-preview">
+               <graphic>
+                  <FontIcon id="icon-preview" fx:id="iconSwitchBtn" />
+               </graphic>
+            </MFXButton>
+         </children>
+         <styleClass>
+            <String fx:value="hbox-component" />
+            <String fx:value="center" />
+         </styleClass>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <MFXCheckbox fx:id="isValidA" styleClass="check-button" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                           <children>
+                              <Label fx:id="floatingAnswerA" text="Risposta A">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="floating" />
+                                 </styleClass>
+                              </Label>
+                              <TextField fx:id="fieldAnswerA" styleClass="field" />
+                              <Label fx:id="errorAnswerA" text="Label">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="error" />
+                                 </styleClass>
+                                 <graphic>
+                                    <FontIcon id="icon-error" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                           <children>
+                              <Label fx:id="floatingAnswerB" text="Risposta B">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="floating" />
+                                 </styleClass>
+                              </Label>
+                              <TextField fx:id="fieldAnswerB" styleClass="field" />
+                              <Label fx:id="errorAnswerB" text="Label">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="error" />
+                                 </styleClass>
+                                 <graphic>
+                                    <FontIcon id="icon-error" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <MFXCheckbox fx:id="isValidB" styleClass="check-button" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="hbox-component" />
+                  <String fx:value="center" />
+                  <String fx:value="spacing" />
+               </styleClass>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <MFXCheckbox fx:id="isValidC" styleClass="check-button" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                           <children>
+                              <Label fx:id="floatingAnswerC" text="Risposta C">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="floating" />
+                                 </styleClass>
+                              </Label>
+                              <TextField fx:id="fieldAnswerC" styleClass="field" />
+                              <Label fx:id="errorAnswerC" text="Label">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="error" />
+                                 </styleClass>
+                                 <graphic>
+                                    <FontIcon id="icon-error" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                           <children>
+                              <Label fx:id="floatingAnswerD" text="Risposta B">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="floating" />
+                                 </styleClass>
+                              </Label>
+                              <TextField fx:id="fieldAnswerD" styleClass="field" />
+                              <Label fx:id="errorAnswerD" text="Label">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="error" />
+                                 </styleClass>
+                                 <graphic>
+                                    <FontIcon id="icon-error" />
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <MFXCheckbox fx:id="isValidD" styleClass="check-button" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+               </children>
+               <styleClass>
+                  <String fx:value="hbox-component" />
+                  <String fx:value="center" />
+                  <String fx:value="spacing" />
+               </styleClass>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="vbox-component" />
+            <String fx:value="center" />
+            <String fx:value="spacing" />
+         </styleClass>
+      </VBox>
+   </children>
+</VBox>

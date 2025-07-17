@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../css/view/statistics.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.StatisticStudentController">
+   <left>
+      <fx:include fx:id="sidebarStudent" source="SidebarStudent.fxml" />
+   </left>
+   <center>
+      <StackPane prefHeight="720.0" prefWidth="1012.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="center-content">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="header-center-content">
+                     <children>
+                        <Label fx:id="titlePage" text="Statistiche">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="header" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="400.0" styleClass="card-chart">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="24.0">
+                                 <children>
+                                    <VBox spacing="16.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label fx:id="titleCard" text="Riepilogo">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="card-title" />
+                                             </styleClass>
+                                          </Label>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label fx:id="completedText" text="Completati">
+                                                   <styleClass>
+                                                      <String fx:value="text" />
+                                                      <String fx:value="content-card" />
+                                                   </styleClass>
+                                                   <graphic>
+                                                      <FontIcon id="icon-legend-color" styleClass="completed" />
+                                                   </graphic>
+                                                </Label>
+                                                <Region HBox.hgrow="ALWAYS" />
+                                                <Label fx:id="completedValue" text="0">
+                                                   <styleClass>
+                                                      <String fx:value="text" />
+                                                      <String fx:value="content-card-number" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT">
+                                             <children>
+                                                <Label fx:id="tobeCompletedText" text="Da completare">
+                                                   <styleClass>
+                                                      <String fx:value="text" />
+                                                      <String fx:value="content-card" />
+                                                   </styleClass>
+                                                   <graphic>
+                                                      <FontIcon id="icon-legend-color" styleClass="indeterminate" />
+                                                   </graphic>
+                                                </Label>
+                                                <Region HBox.hgrow="ALWAYS" />
+                                                <Label fx:id="tobeCompletedValue" text="0">
+                                                   <styleClass>
+                                                      <String fx:value="text" />
+                                                      <String fx:value="content-card-number" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <StackPane prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <PieChart id="pieChartStatistics" fx:id="pieChartStatistics" prefHeight="168.0" prefWidth="168.0" />
+                                          <Circle id="circle" radius="25.0" strokeType="INSIDE" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="card-average">
+                           <children>
+                              <HBox prefHeight="88.0" prefWidth="391.0">
+                                 <children>
+                                    <Label fx:id="avarageText" text="Media Esercizi">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="card-title" />
+                                       </styleClass>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="200.0" styleClass="compontent" HBox.hgrow="ALWAYS" />
+                                    <VBox id="wrapper-icon" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <FontIcon id="icon-smile" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                 </styleClass>
+                                 <VBox.margin>
+                                    <Insets top="-8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                                 <children>
+                                    <Label fx:id="avarageValue" text="4.5352">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="average" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="card-average">
+                           <children>
+                              <HBox prefHeight="88.0" prefWidth="391.0" styleClass="center">
+                                 <children>
+                                    <Label fx:id="rankText" text="Posizione in classifica">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="card-title" />
+                                       </styleClass>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="200.0" styleClass="compontent" HBox.hgrow="ALWAYS" />
+                                    <VBox id="wrapper-icon" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <FontIcon id="icon-rank" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="-8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                                 <children>
+                                    <Label fx:id="rankValue" text="1">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="average" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="compontent" />
+                        <String fx:value="spacing-24" />
+                     </styleClass>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="card-barchart" VBox.vgrow="ALWAYS">
+                     <children>
+                        <StackedBarChart fx:id="categoryScoreChart" styleClass="bar-chart">
+                          <xAxis>
+                            <CategoryAxis fx:id="categoryAxis" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </StackedBarChart>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

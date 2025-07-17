@@ -1,0 +1,180 @@
+@import '../util/colors.css';
+@import '../../fonts/Fonts.css';
+
+.root-container {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-background-color: -mfx-white;
+    -fx-alignment: center;
+}
+.root-container .scroll-bar:horizontal {
+    -fx-opacity: 0px;
+}
+.root-container .scroll-bar:vertical {
+    -fx-opacity: 0px;
+}
+
+
+.content {
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-background-color: transparent;
+    -fx-padding: 24px 44px 24px 44px;
+    -fx-spacing: 16px;
+    -fx-alignment: center;
+}
+
+.container-icon {
+    -fx-min-width: 160px;
+    -fx-min-height: 160px;
+    -fx-pref-width: 160px;
+    -fx-pref-height: 160px;
+    -fx-max-width: 160px;
+    -fx-max-height: 160px;
+    -fx-background-color: -mfx-black;
+    -fx-background-radius: 18px;
+    -fx-alignment: center;
+}
+
+.vbox-item {
+    -fx-min-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-width: -1;
+    -fx-pref-height: -1;
+    -fx-max-width: -1;
+    -fx-max-height: -1;
+    -fx-padding: 8px;
+    -fx-spacing: 16px;
+}
+.vbox-item.center {
+    -fx-alignment: center;
+}
+
+.component {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-spacing: 4px;
+}
+.component.spacing {
+    -fx-spacing: 16px !important;
+}
+.component.center-left {
+    -fx-alignment: center-left;
+}
+
+
+.text {
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-graphic-text-gap: 8px;
+    -fx-content-display: left;
+}
+.text.categoty {
+    -fx-font-family: "SF Pro Display Heavy";
+    -fx-font-size: 22px;
+}
+
+.text.title {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 17px;
+    -fx-text-fill: -mfx-color-blue-text-primary;
+}
+
+.text.floating {
+    -fx-font-family: "SF Pro Display SemiBold";
+    -fx-font-size: 15px;
+}
+.descrption {
+    -fx-min-width: -1;
+    -fx-pref-width: -1;
+    -fx-max-width: -1;
+    -fx-min-height: -1;
+    -fx-pref-height: -1;
+    -fx-max-height: -1;
+    -fx-background-color: -mfx-white;
+    -fx-background-radius: 9px;
+    -fx-border-color: -mfx-color-separator;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 9px;
+    -fx-padding: 8px;
+    -fx-alignment: top-left;
+    -fx-font-family: "SF Pro Display Regular";
+    -fx-font-size: 15px;
+    -fx-text-fill: -mfx-color-black-text-primary;
+    -fx-prompt-text-fill: -mfx-color-black-text-secondary;
+    -fx-highlight-text-fill: -mfx-color-black-text-primary;
+    -fx-highlight-fill: -mfx-highlight-color;
+}
+
+.descrption:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0;
+}
+.descrption:hover {
+    -fx-border-color: -mfx-gray-dark;
+}
+
+.descrption .scroll-pane .scroll-bar:vertical,
+.descrption .scroll-pane .scroll-bar:horizontal,
+.descrption .scroll-pane .corner {
+    -fx-opacity: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+.no-scroll-area {
+    -fx-padding: 8px;
+}
+.descrption .viewport .content{
+    -fx-padding: 0;
+    -fx-border-color: -mfx-white;
+    -fx-background-color: -mfx-white;
+}
+
+.icon-exercise {
+    -fx-icon-color: -mfx-color-white-text-primary;
+    -fx-icon-size: 86px;
+}
+
+#icon-description {
+    -fx-icon-code: "mdi2i-information";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-blue-text-secondary;
+}
+
+#icon-title {
+    -fx-icon-code: "mdi2i-information";
+    -fx-icon-size: 17px;
+    -fx-icon-color: -mfx-color-blue-text-secondary;
+}
+
+#icon-difficulty{
+    -fx-icon-code: "mdi2s-star-circle";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-blue-text-secondary;
+}
+
+#icon-topic {
+    -fx-icon-code: "mdi2f-folder-pound";
+    -fx-icon-size: 15px;
+    -fx-icon-color: -mfx-color-blue-text-secondary;
+}
+
+#icon-category {
+    -fx-icon-code: "mdi2f-folder-information";
+    -fx-icon-size: 22px;
+    -fx-icon-color: -mfx-color-blue-text-secondary;
+}

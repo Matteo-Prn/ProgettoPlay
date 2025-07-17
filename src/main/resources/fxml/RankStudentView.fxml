@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../css/view/rank.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.RankStudentController">
+    <left>
+        <fx:include fx:id="sidebarStudent" source="SidebarStudent.fxml" />
+    </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="center-content">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="header-center-content">
+                     <children>
+                        <Label fx:id="titlePage" text="Classifica">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="header" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="rectangle">
+                           <HBox.margin>
+                              <Insets top="32.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label fx:id="usernameSecondRank" text="Marco">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="rectangle-username" />
+                                 </styleClass>
+                              </Label>
+                              <Label text="2°">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="rectangle-number" />
+                                 </styleClass>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="scoreSecondRank" text="50">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="rectangle-score" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label fx:id="scoreText2" text="punti">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="rectangle-score" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                    <String fx:value="spacing-4" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="rectangle">
+                           <children>
+                              <Label fx:id="usernameFirstRank" text="Matteo">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="rectangle-username" />
+                                 </styleClass>
+                              </Label>
+                              <Label text="1°">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="rectangle-number" />
+                                 </styleClass>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="scoreFirstRank" text="80">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="rectangle-score" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label fx:id="scoreText1" text="punti">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="rectangle-score" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                    <String fx:value="spacing-4" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="rectangle">
+                           <HBox.margin>
+                              <Insets top="64.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label fx:id="usernameThirdRank" text="Niccolo">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="rectangle-username" />
+                                 </styleClass>
+                              </Label>
+                              <Label text="3°">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="rectangle-number" />
+                                 </styleClass>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="scoreThirdRank" text="42">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="rectangle-score" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label fx:id="scoreText3" text="punti">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="rectangle-score" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                    <String fx:value="spacing-4" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="compontent" />
+                        <String fx:value="spacing-24" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+                  <VBox alignment="BASELINE_CENTER" prefHeight="316.0" prefWidth="1192.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <MFXTableView id="table" fx:id="table" prefHeight="396.0" prefWidth="1384.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

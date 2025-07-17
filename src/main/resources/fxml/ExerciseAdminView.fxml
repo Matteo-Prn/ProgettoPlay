@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXScrollPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../css/view/exercise.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.ExerciseAdminController">
+    <left>
+        <fx:include fx:id="sidebarAdmin" source="SidebarAdmin.fxml" VBox.vgrow="ALWAYS" />
+    </left>
+    <center>
+        <StackPane fx:id="rootPane" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-main-center">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                            <children>
+                                <Label fx:id="titlePage" text="Esercizi">
+                                    <styleClass>
+                                        <String fx:value="text" />
+                                        <String fx:value="title-page" />
+                                    </styleClass>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                        <Label fx:id="filter" text="Filtra">
+                                            <graphic>
+                                                <FontIcon id="icon-filer" />
+                                            </graphic>
+                                            <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="filter" />
+                                            </styleClass>
+                                        </Label>
+                                    </children>
+                                    <styleClass>
+                                        <String fx:value="component" />
+                                        <String fx:value="center" />
+                                    </styleClass>
+                                </HBox>
+                                <MFXButton fx:id="allCategoriesBtn" styleClass="button-page" text="Tutti" />
+                                <MFXButton fx:id="category1Btn" styleClass="button-page" text="Categoria 1" />
+                                <MFXButton fx:id="category2Btn" styleClass="button-page" text="Categoria 2" />
+                                <MFXButton fx:id="category3Btn" styleClass="button-page" text="Categoria 3" />
+                            </children>
+                            <styleClass>
+                                <String fx:value="component" />
+                                <String fx:value="center-left" />
+                                <String fx:value="spacing" />
+                            </styleClass>
+                        </HBox>
+                        <HBox fx:id="conteinerNotFound" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Label fx:id="notFoundExercise" text="Label">
+                                    <graphic>
+                                        <FontIcon id="icon-info" />
+                                    </graphic>
+                                    <styleClass>
+                                        <String fx:value="text" />
+                                        <String fx:value="info" />
+                                    </styleClass>
+                                </Label>
+                            </children>
+                            <styleClass>
+                                <String fx:value="component" />
+                                <String fx:value="center" />
+                            </styleClass>
+                        </HBox>
+                        <MFXScrollPane hbarPolicy="NEVER" prefHeight="1002.0" prefWidth="750.0" styleClass="root-container" vbarPolicy="AS_NEEDED" VBox.vgrow="ALWAYS">
+                            <content>
+                                <FlowPane fx:id="cardContainer" hgap="24.0" maxWidth="-Infinity" prefHeight="0.0" prefWidth="954.0" styleClass="container-exercise" vgap="24.0" />
+                            </content>
+                        </MFXScrollPane>
+                    </children>
+                </VBox>
+                <VBox fx:id="dialogDeleteExercise" prefHeight="200.0" prefWidth="100.0" styleClass="dialogon-close">
+                    <StackPane.margin>
+                        <Insets bottom="400.0" />
+                    </StackPane.margin>
+                    <children>
+                        <HBox prefHeight="29.0" prefWidth="268.0" styleClass="component">
+                            <children>
+                                <Label fx:id="dialogTitle" text="Sei sicuro di abbandoare ?">
+                                    <styleClass>
+                                        <String fx:value="text" />
+                                        <String fx:value="title-dialogon-close" />
+                                    </styleClass>
+                                </Label>
+                                <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                            <children>
+                                <Label fx:id="messageDialog" text="Se abbandoni l'esercizio i progessi non verrano salvati">
+                                    <styleClass>
+                                        <String fx:value="text" />
+                                        <String fx:value="dialog-message" />
+                                    </styleClass>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" VBox.vgrow="ALWAYS" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                            <children>
+                                <MFXButton fx:id="cancelDialogBtn" styleClass="button-dialogon" text="Annulla" />
+                                <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                                <MFXButton fx:id="confirmDialogBtn" styleClass="button-dialogon" text="Conferma" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

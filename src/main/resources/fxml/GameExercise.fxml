@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<?import io.github.palexdev.materialfx.controls.MFXProgressBar?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../css/view/game-exercise.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.GameExerciseController">
+   <bottom>
+      <HBox prefHeight="0.0" prefWidth="1280.0" styleClass="bottom" BorderPane.alignment="CENTER">
+         <children>
+            <MFXButton fx:id="backBtn" styleClass="button-base" text="Indietro">
+               <graphic>
+                  <FontIcon id="icon-arrow" />
+               </graphic>
+            </MFXButton>
+            <Region prefHeight="1.0" prefWidth="578.0" styleClass="component" HBox.hgrow="ALWAYS" />
+            <MFXButton fx:id="nextBtn" text="Avanti">
+               <styleClass>
+                  <String fx:value="button-base" />
+                  <String fx:value="next-confirm" />
+               </styleClass>
+            </MFXButton>
+            <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+            <MFXButton fx:id="confirmBtn" text="Conferma">
+               <styleClass>
+                  <String fx:value="button-base" />
+                  <String fx:value="next-confirm" />
+               </styleClass>
+            </MFXButton>
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="31.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <MFXButton fx:id="openDialogBtn">
+               <graphic>
+                  <FontIcon id="icon-close" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="button-base" />
+                  <String fx:value="graphic-only" />
+               </styleClass>
+            </MFXButton>
+            <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+            <VBox prefHeight="295.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="titlePage" text="Titolo">
+                     <styleClass>
+                        <String fx:value="text" />
+                        <String fx:value="counterExericse" />
+                     </styleClass>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                     <children>
+                        <Label fx:id="currentQuestion" text="0">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="number" />
+                           </styleClass>
+                        </Label>
+                        <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="totalQuestion" text="5">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="number" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <MFXProgressBar id="progress" fx:id="progessExercise" progress="0.25" />
+               </children>
+               <styleClass>
+                  <String fx:value="component" />
+                  <String fx:value="center" />
+                  <String fx:value="spacing-8" />
+               </styleClass>
+            </VBox>
+            <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+         </children>
+         <styleClass>
+            <String fx:value="header" />
+            <String fx:value="center" />
+         </styleClass>
+      </HBox>
+   </top>
+   <center>
+      <StackPane fx:id="mainContainer" prefHeight="603.0" prefWidth="1280.0" styleClass="center-root" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="recapContainer" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <fx:include fx:id="recapExercise" source="RecapExercise.fxml" />
+               </children>
+            </VBox>
+            <VBox fx:id="dialogClosePage" prefHeight="200.0" prefWidth="100.0" styleClass="dialogon-close">
+               <StackPane.margin>
+                  <Insets top="44.0" />
+               </StackPane.margin>
+               <children>
+                  <HBox prefHeight="29.0" prefWidth="268.0" styleClass="component">
+                     <children>
+                        <Label fx:id="dialogTitle" text="Sei sicuro di abbandoare ?">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="title-dialogon-close" />
+                           </styleClass>
+                        </Label>
+                        <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                        <MFXButton fx:id="closeDialgBtn" styleClass="button-dialog-close">
+                           <graphic>
+                              <FontIcon id="icon-close-dialog" />
+                           </graphic>
+                        </MFXButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                     <children>
+                        <Label fx:id="messageDialog" text="Se abbandoni l'esercizio i progessi non verrano salvati">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="dialog-message" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                     <children>
+                        <MFXButton fx:id="cancelDialogBtn" styleClass="button-dialogon" text="Annulla" />
+                        <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                        <MFXButton fx:id="confirmDialogBtn" styleClass="button-dialogon" text="Conferma" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="dialogResult" prefHeight="200.0" prefWidth="100.0" styleClass="dialog-result">
+               <StackPane.margin>
+                  <Insets top="44.0" />
+               </StackPane.margin>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                     <children>
+                        <Label fx:id="titleDialogResult" text="Hai completato l'esercizio !">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="dialog-result-title" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <styleClass>
+                        <String fx:value="component" />
+                        <String fx:value="spacing-16" />
+                        <String fx:value="center-left" />
+                     </styleClass>
+                     <children>
+                        <HBox maxWidth="149.0" prefHeight="100.0" prefWidth="149.0" styleClass="conatiner-result-data">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="scoreText" text="Punteggio">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="subtile-result" />
+                                       </styleClass>
+                                    </Label>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label fx:id="scoreUser" text="0">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="result" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label text="/">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="result" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="scoreExercise" text="5">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="result" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="component" />
+                                          <String fx:value="spacing-4" />
+                                       </styleClass>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="component" />
+                                    <String fx:value="spacing-4" />
+                                 </styleClass>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox maxWidth="149.0" prefHeight="100.0" prefWidth="149.0" styleClass="conatiner-result-data">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="precisionText" text="Precisione">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="subtile-result" />
+                                       </styleClass>
+                                    </Label>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label fx:id="perctResult" text="80%">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="result" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="component" />
+                                          <String fx:value="spacing-4" />
+                                       </styleClass>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="component" />
+                                    <String fx:value="spacing-4" />
+                                 </styleClass>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox maxWidth="149.0" prefHeight="100.0" prefWidth="149.0" styleClass="conatiner-result-data">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                                       <children>
+                                          <Label fx:id="correctText" text="Corrette">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="subtile-result" />
+                                             </styleClass>
+                                          </Label>
+                                          <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                                          <Label fx:id="numberCorrect" text="4">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="result-sub" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                                       <children>
+                                          <Label fx:id="errorText" text="Errate">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="subtile-result" />
+                                             </styleClass>
+                                          </Label>
+                                          <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                                          <Label fx:id="numberError" text="1">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="result-sub" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                                       <children>
+                                          <Label fx:id="skippedText" text="Domande saltate">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="subtile-result" />
+                                             </styleClass>
+                                          </Label>
+                                          <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                                          <Label fx:id="numberSkipped" text="0">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="result-sub" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="component" />
+                                    <String fx:value="spacing-4" />
+                                 </styleClass>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <MFXButton fx:id="viewResultBtn" styleClass="button-viewResult" text="Vedi i risultati" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <styleClass>
+                        <String fx:value="component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                     <children>
+                        <Label fx:id="separetorDialog" text="oppure">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="separator" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" VBox.vgrow="ALWAYS" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="component">
+                     <children>
+                        <MFXButton fx:id="goHomeBtn" maxWidth="229.0" prefWidth="229.0" styleClass="button-dialogon-result" text="Torna schermata principale" />
+                        <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                        <MFXButton fx:id="newExerciseBtn" maxWidth="159.0" prefWidth="159.0" styleClass="button-dialogon-result" text="Nuovo esercizio" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="exerciseContainer" prefHeight="200.0" prefWidth="100.0" styleClass="card-exercise">
+               <children>
+                  <VBox fx:id="questionContainer" prefHeight="118.0" prefWidth="648.0">
+                     <children>
+                        <HBox prefHeight="46.0" prefWidth="648.0" styleClass="component">
+                           <children>
+                              <Label fx:id="floatQuestion" text="Domanda">
+                                 <styleClass>
+                                    <String fx:value="text" />
+                                    <String fx:value="float" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <fx:include fx:id="codeArea" source="CodeArea.fxml" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="center" />
+                        <String fx:value="spacing-8" />
+                     </styleClass>
+                  </VBox>
+                  <VBox prefHeight="296.0" prefWidth="648.0" styleClass="spacing-24">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <MFXCheckbox fx:id="checkA" styleClass="check-button">
+                                       <HBox.margin>
+                                          <Insets top="24.0" />
+                                       </HBox.margin>
+                                    </MFXCheckbox>
+                                    <VBox prefHeight="90.0" prefWidth="648.0">
+                                       <children>
+                                          <Label fx:id="floatA" text="Risposta A">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="float" />
+                                             </styleClass>
+                                          </Label>
+                                          <TextField fx:id="fieldA" editable="false" styleClass="field" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="component" />
+                                          <String fx:value="bar1" />
+                                       </styleClass>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="component" />
+                                    <String fx:value="center" />
+                                    <String fx:value="spacing-8" />
+                                 </styleClass>
+                              </HBox>
+                              <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="90.0" prefWidth="648.0">
+                                       <children>
+                                          <Label fx:id="floatB" text="Risposta B">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="float" />
+                                             </styleClass>
+                                          </Label>
+                                          <TextField fx:id="fieldB" editable="false" styleClass="field" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="component" />
+                                          <String fx:value="bar1" />
+                                       </styleClass>
+                                    </VBox>
+                                    <MFXCheckbox fx:id="checkB" styleClass="check-button">
+                                       <HBox.margin>
+                                          <Insets top="24.0" />
+                                       </HBox.margin>
+                                    </MFXCheckbox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="component" />
+                                    <String fx:value="center" />
+                                    <String fx:value="spacing-8" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="component" />
+                              <String fx:value="spacing-16" />
+                           </styleClass>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <MFXCheckbox fx:id="checkC" styleClass="check-button">
+                                       <HBox.margin>
+                                          <Insets top="24.0" />
+                                       </HBox.margin>
+                                    </MFXCheckbox>
+                                    <VBox prefHeight="90.0" prefWidth="648.0">
+                                       <children>
+                                          <Label fx:id="floatC" text="Risposta C">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="float" />
+                                             </styleClass>
+                                          </Label>
+                                          <TextField fx:id="fieldC" editable="false" styleClass="field" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="component" />
+                                          <String fx:value="bar1" />
+                                       </styleClass>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="component" />
+                                    <String fx:value="center" />
+                                    <String fx:value="spacing-8" />
+                                 </styleClass>
+                              </HBox>
+                              <Region prefHeight="200.0" prefWidth="200.0" styleClass="component" HBox.hgrow="ALWAYS" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="90.0" prefWidth="648.0">
+                                       <children>
+                                          <Label fx:id="floatD" text="Risposta D">
+                                             <styleClass>
+                                                <String fx:value="text" />
+                                                <String fx:value="float" />
+                                             </styleClass>
+                                          </Label>
+                                          <TextField fx:id="fieldD" editable="false" styleClass="field" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="component" />
+                                          <String fx:value="bar1" />
+                                       </styleClass>
+                                    </VBox>
+                                    <MFXCheckbox fx:id="checkD" styleClass="check-button">
+                                       <HBox.margin>
+                                          <Insets top="24.0" />
+                                       </HBox.margin>
+                                    </MFXCheckbox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="component" />
+                                    <String fx:value="center" />
+                                    <String fx:value="spacing-8" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="component" />
+                              <String fx:value="spacing-16" />
+                           </styleClass>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

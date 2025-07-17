@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXToggleButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="657.0" styleClass="root" stylesheets="@../css/view/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.LoginController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="center" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="section-title">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <ImageView id="icon-logo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="welcome" styleClass="text-title" text="Benvenuto su" />
+                        <Label fx:id="play" text="Play">
+                           <styleClass>
+                              <String fx:value="text-title" />
+                              <String fx:value="play" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="subtitle" styleClass="text-subtitle" text="Impara, esercitati, divertiti" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="hbox-component" />
+                        <String fx:value="center" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="461.0" prefWidth="380.0" styleClass="card-content">
+               <children>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="hbox-component">
+                     <children>
+                        <VBox fx:id="alertPopup" prefHeight="200.0" prefWidth="100.0" styleClass="vbox-alert-account">
+                           <children>
+                              <Label fx:id="textTitleAlert" styleClass="text-alert-accoun-title" text="Titolo">
+                                 <graphic>
+                                    <FontIcon styleClass="icon-alert-account-title" />
+                                 </graphic>
+                              </Label>
+                              <Label fx:id="textMessageAlert" styleClass="text-alert-account-messageKey" text="Messaggio" />
+                           </children>
+                        </VBox>
+                        <HBox fx:id="titleCard" prefHeight="100.0" prefWidth="200.0" styleClass="vbox-cardtitle">
+                           <children>
+                              <Label fx:id="textTitleCard" styleClass="text-cardtitle" text="Accedi o Registrati" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+                  <HBox prefHeight="15.0" prefWidth="342.0" styleClass="hbox-component">
+                     <children>
+                        <MFXToggleButton fx:id="isAdminToggle" prefHeight="41.0" prefWidth="356.0" styleClass="toggle" text="Sei un Amministratore ?" />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                     <children>
+                        <Label fx:id="floatingTextUsername" styleClass="text-floating" text="Nome utente" />
+                        <TextField fx:id="fieldUsername" promptText="Inserisci il nome utente" styleClass="field" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vbox-component">
+                     <children>
+                        <Label fx:id="floatingTextPassword" styleClass="text-floating" text="Password" />
+                        <MFXPasswordField fx:id="fieldPassword" prefWidth="378.0" promptText="Inserisci la password" />
+                     </children>
+                  </VBox>
+                  <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="hbox-component">
+                     <children>
+                        <MFXButton fx:id="loginAdminBtn" prefWidth="381.0" styleClass="button-login" text="Accedi come Amministratore" />
+                        <MFXButton fx:id="loginStudentBtn" prefWidth="381.0" styleClass="button-login" text="Accedi" />
+                     </children>
+                  </StackPane>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hbox-component">
+                     <children>
+                        <MFXButton fx:id="registerBtn" prefWidth="362.0" text="Registrati qui">
+                           <styleClass>
+                              <String fx:value="button-login" />
+                              <String fx:value="button-register" />
+                           </styleClass>
+                        </MFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="1280.0" styleClass="header" BorderPane.alignment="CENTER">
+         <children>
+            <fx:include source="ButtonLanguage.fxml" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

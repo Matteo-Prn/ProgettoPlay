@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="39f15fac-51fe-4f10-8785-dd7c5e720687" name="DDL Mapping">
+      <data-sources db="123314d5-1787-43da-ae6d-c0e57b4ac65f" ddl="3bacff03-56e9-4b74-9328-e1c0ee1ca1a3" />
+      <scope>
+        <node kind="database" negative="1" />
+      </scope>
+    </mapping>
+    <mapping uuid="b226d8a1-be23-464e-b4e5-76421ddbc5dc" name="play-javafx.db Mapping">
+      <data-sources db="123314d5-1787-43da-ae6d-c0e57b4ac65f" ddl="3bacff03-56e9-4b74-9328-e1c0ee1ca1a3" />
+      <scope>
+        <node kind="database" negative="1">
+          <node kind="schema" negative="1" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="3bacff03-56e9-4b74-9328-e1c0ee1ca1a3" />
+          <option name="name" value="play-javafx.db (DDL)" />
+          <option name="dbmsName" value="SQLITE" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/database" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

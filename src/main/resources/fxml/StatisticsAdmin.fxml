@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../css/view/statistics.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.play.controllers.view.StatisticAdminController">
+   <left>
+      <fx:include fx:id="sidebarAdmin" source="SidebarAdmin.fxml" />
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="center-content">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                     <children>
+                        <Label fx:id="titlePage" text="Statistiche">
+                           <styleClass>
+                              <String fx:value="text" />
+                              <String fx:value="header" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="card">
+                           <children>
+                              <HBox prefHeight="88.0" prefWidth="391.0">
+                                 <children>
+                                    <Label fx:id="userText" text="Numero di utenti">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="titleCard" />
+                                       </styleClass>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="200.0" styleClass="compontent" HBox.hgrow="ALWAYS" />
+                                    <VBox id="wrapper-icon" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <FontIcon id="icon-users" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                 </styleClass>
+                                 <VBox.margin>
+                                    <Insets top="-8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                                 <children>
+                                    <Label fx:id="userValue" text="4">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="number" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="card">
+                           <children>
+                              <HBox prefHeight="88.0" prefWidth="391.0">
+                                 <children>
+                                    <Label fx:id="avarageUserText" text="Media punti utenti">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="titleCard" />
+                                       </styleClass>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="200.0" styleClass="compontent" HBox.hgrow="ALWAYS" />
+                                    <VBox id="wrapper-icon" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <FontIcon id="icon-statistics" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                 </styleClass>
+                                 <VBox.margin>
+                                    <Insets top="-8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                                 <children>
+                                    <Label fx:id="avarageUserValue" text="5">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="number" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="card">
+                           <children>
+                              <HBox prefHeight="88.0" prefWidth="391.0">
+                                 <children>
+                                    <Label fx:id="exerciseTotalText" text="Numero di esercizi">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="titleCard" />
+                                       </styleClass>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="200.0" styleClass="compontent" HBox.hgrow="ALWAYS" />
+                                    <VBox id="wrapper-icon" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <FontIcon id="icon-exercises" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                 </styleClass>
+                                 <VBox.margin>
+                                    <Insets top="-8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                                 <children>
+                                    <Label fx:id="exerciseTotalValue" text="5">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="number" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="spacing-24" />
+                        <String fx:value="compontent" />
+                     </styleClass>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" styleClass="card">
+                           <children>
+                              <HBox prefHeight="88.0" prefWidth="391.0">
+                                 <children>
+                                    <Label fx:id="categoryText" text="Categoria più giocata">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="titleCard" />
+                                       </styleClass>
+                                    </Label>
+                                    <Region prefHeight="200.0" prefWidth="200.0" styleClass="compontent" HBox.hgrow="ALWAYS" />
+                                    <VBox id="wrapper-icon" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <FontIcon id="icon-exercises" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="compontent" />
+                                    <String fx:value="center" />
+                                 </styleClass>
+                                 <VBox.margin>
+                                    <Insets top="-8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compontent">
+                                 <children>
+                                    <Label fx:id="categoryValue" text="4">
+                                       <styleClass>
+                                          <String fx:value="text" />
+                                          <String fx:value="number" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
